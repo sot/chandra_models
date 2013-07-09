@@ -15,12 +15,12 @@ def get_model_spec(model_name):
 
     model_name = model_name.lower()
 
-    if model_name not 'pline':
-        filename = './' + model_name + '/' + model_name + '_spec.json'
+    if model_name != 'pline':
+        filename = model_name + '/' + model_name + '_spec.json'
         model_spec = json.load(open(filename, 'r'))
 
     else:
         filename = './pline/pline_guidelines.dat'
-        guidelines = asciitable.read(filename)
+        model_spec = asciitable.read(filename)
 
     return model_spec
