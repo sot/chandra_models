@@ -1,4 +1,2 @@
-import os
-from .get_model_spec import *
-
-__version__ = open(os.path.join(os.path.dirname(__file__),'VERSION')).read().strip()
+from .get_model_spec import get_xija_model_spec
+from .version import __version__

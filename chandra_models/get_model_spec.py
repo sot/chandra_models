@@ -1,31 +1,28 @@
 "Load Xija Model Spec"
 import json
 import os
-import asciitable
 
 
 filepath = os.path.dirname(__file__)
 
-def get_model_spec(model_name):
-    """ Load model parameters from the associated file in the local directory
 
-    :param model_name: name of model input as a string, this must match the model name used in the
-                       json filename
+def get_xija_model_spec(model_name):
+    """
+    Load Xija model parameters for the specified `model_name` string.
 
-    :returns: dictionary of xija model parameters, or recarray of pline guidelines
-    
+    Example::
+
+      >>> model_spec = chandra_models.get_xija_model_spec('acisfp')
+      >>> model = xija.XijaModel(model_spec=model_spec)
+
+    :param model_name: name of model
+
+    :returns: dict of Xija model spec
     """
 
     model_name = model_name.lower()
-
-    if model_name != 'pline':
-        filename = model_name + '/' + model_name + '_spec.json'
-        fullfilename = os.path.join(filepath, filename)
-        model_spec = json.load(open(fullfilename, 'r'))
-
-    else:
-        filename = 'pline/pline_guidelines.dat'
-        fullfilename = os.path.join(filepath, filename)
-        model_spec = asciitable.read(fullfilename)
+    filename = os.path.join(filepath, 'xija', model_name,
+                            '{}_spec.json'.format(model_name))
+    model_spec = json.load(open(filename, 'r'))
 
     return model_spec
