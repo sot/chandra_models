@@ -1,6 +1,6 @@
 from distutils.core import setup
 
-from xija.models.version import __version__
+from chandra_models.version import __version__
 
 setup(
     name='xija_models',
@@ -12,5 +12,5 @@ setup(
     license='BSD',
     description='Repository for Chandra model parameter files.',
     long_description=open('README').read(),
-    package_data={'xija.models': ['*/*.json']},
+    package_data={'chandra_models': ['xija/*/*.json']},
 )
