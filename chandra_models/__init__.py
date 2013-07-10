@@ -1,2 +1,2 @@
-from .get_model_spec import get_xija_model_spec
+from .get_model_spec import *
 from .version import __version__
