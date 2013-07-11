@@ -18,9 +18,13 @@ Chandra Model Definitions
 Xija
 ----
 ACIS Focal Plane
-    :Description: Thermal model of the ACIS focal plane. 
+    :Description: Thermal model of the ACIS focal plane.
     :Model Name: 'acisfp'
     :MSIDs: FPTEMP_11
+ACIS DEA
+    :Description: Thermal model of the ACIS DEA unit.
+    :Model Name: 'dea'
+    :MSIDs: 1DEAMZT
 ACIS DPA
     :Description: Thermal model of the ACIS DPA unit.
     :Model Name: 'dpa'
@@ -50,8 +54,8 @@ Examples
 
 Retrieving and Using Xija Model Spec
 ------------------------------------
-    >>> model_spec = chandra_models.get_xija_model_spec('acisfp')
-    >>> model = xija.XijaModel(model_spec=model_spec)
+    >>> model_spec = chandra_models.get_xija_model_file('acisfp')
+    >>> model = xija.XijaModel('acisfp', model_spec=model_spec)
 
 
 Retrieving PLINE Guidelines

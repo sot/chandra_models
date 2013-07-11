@@ -1,33 +1,39 @@
-"Load Xija Model Spec"
+"""
+Get Chandra model specifications
+"""
 import json
 import os
 from astropy.io import ascii
 
-__all__ = ['get_xija_model_spec', 'get_pline_guidelines']
+__all__ = ['get_xija_model_file', 'get_pline_guidelines']
 
 FILEPATH = os.path.dirname(__file__)
 
 
-def get_xija_model_spec(model_name):
+def get_xija_model_file(model_name):
     """
-    Load Xija model parameters for the specified `model_name` string.
+    Get file name of Xija model specification for the specified ``model_name``.
+
+    Supported model names are: ``'acisfp'``, ``'dea'``, ``'dpa'``,
+    ``'psmc'``, ``'minusyz'``, and ``'pftank2t'``.
 
     Example::
 
-      >>> model_spec = chandra_models.get_xija_model_spec('acisfp')
-      >>> model = xija.XijaModel(model_spec=model_spec)
+      >>> model_spec = chandra_models.get_xija_model_file('acisfp')
+      >>> model = xija.XijaModel('acisfp', model_spec=model_spec)
 
     :param model_name: name of model
-
-    :returns: dict of Xija model spec
+    :returns: file name of the corresponding Xija model specification
     """
 
     model_name = model_name.lower()
-    filename = os.path.join(FILEPATH, 'xija', model_name,
-                            '{}_spec.json'.format(model_name))
-    model_spec = json.load(open(filename, 'r'))
+    file_name = os.path.abspath(os.path.join(FILEPATH, 'xija', model_name,
+                                             '{}_spec.json'.format(model_name)))
 
-    return model_spec
+    if not os.path.exists(file_name):
+        raise ValueError('Model name {!r} ({!r}) does not exist'.format(model_name, file_name))
+
+    return file_name
 
 
 def get_pline_guidelines():
