@@ -68,6 +68,12 @@ Retrieving PLINE Guidelines
              0            180          0:00          0:00          0:00          0:00
 
 
+API documentation
+===================
+
+.. automodule:: chandra_models.get_model_spec
+   :members:
+
 .. Indices and tables
 .. ==================
 .. 
