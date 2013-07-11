@@ -75,7 +75,7 @@ To use the installed flight models::
   >>> import xija
   >>> model_spec = chandra_models.get_xija_model_file('acisfp')
   >>> model = xija.XijaModel('acisfp', model_spec=model_spec,
-                               start='2012:001', stop='2012:010')
+                             start='2012:001', stop='2012:010')
   >>> model.make()
   >>> model.calc()
 
@@ -160,11 +160,3 @@ API documentation
 
 .. automodule:: chandra_models.get_model_spec
    :members:
-
-.. Indices and tables
-.. ==================
-.. 
-.. * :ref:`genindex`
-.. * :ref:`modindex`
-.. * :ref:`search`
-
