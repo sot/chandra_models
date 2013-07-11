@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to chandra_models's documentation!
-==========================================
+Documentation for Chandra Models
+================================
 
-Contents:
+.. Contents:
 
 .. toctree::
    :maxdepth: 2
@@ -19,23 +19,23 @@ Xija
 ----
 ACIS Focal Plane
     :Description: Thermal model of the ACIS focal plane. 
-    :Model Name: ``acisfp``
+    :Model Name: 'acisfp'
     :MSIDs: FPTEMP_11
 ACIS DPA
     :Description: Thermal model of the ACIS DPA unit.
-    :Model Name: ``dpa``
+    :Model Name: 'dpa'
     :MSIDs: 1DPAMZT
 ACIS PSMC
     :Description: Thermal model of the ACIS PSMC, located on the -Z side of the ISIM, facing the +X direction
-    :Model Name: ``psmc``
+    :Model Name: 'psmc'
     :MSIDs: 1PDEAAT
 Minus-YZ
     :Description: Thermal model of several locations on the -Z side of the spacecraft module.
-    :Model Name: ``minusyz``
+    :Model Name: 'minusyz'
     :MSIDs: TEPHIN, TCYLAFT6, PMTANK3T, TMZP_MY
 IPS Fuel Tank
     :Description: Thermal model of a location on the center of the IPS Fuel Tank.
-    :Model Name: ``pftank2t``
+    :Model Name: 'pftank2t'
     :MSIDs: PFTANK2T
 
 PLINE
