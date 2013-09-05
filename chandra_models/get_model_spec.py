@@ -1,7 +1,6 @@
 """
 Get Chandra model specifications
 """
-import json
 import os
 from astropy.io import ascii
 
@@ -14,7 +13,7 @@ def get_xija_model_file(model_name):
     """
     Get file name of Xija model specification for the specified ``model_name``.
 
-    Supported model names are: ``'acisfp'``, ``'dea'``, ``'dpa'``,
+    Supported model names are: ``'aca'``, ``'acisfp'``, ``'dea'``, ``'dpa'``,
     ``'psmc'``, ``'minusyz'``, and ``'pftank2t'``.
 
     Example::
