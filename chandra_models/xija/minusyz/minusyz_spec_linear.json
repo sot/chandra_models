@@ -9,7 +9,7 @@
                 "sigma": 100000.0
             }, 
             "name": "pmtank3t_0"
-        },
+        }, 
         {
             "class_name": "Node", 
             "init_args": [
@@ -19,7 +19,7 @@
                 "sigma": 100000.0
             }, 
             "name": "tcylaft6_0"
-        },
+        }, 
         {
             "class_name": "Node", 
             "init_args": [
@@ -29,6 +29,16 @@
                 "sigma": 100000.0
             }, 
             "name": "tmzp_my_0"
+        }, 
+        {
+            "class_name": "Node", 
+            "init_args": [
+                "tephin_0"
+            ], 
+            "init_kwargs": {
+                "sigma": 100000.0
+            }, 
+            "name": "tephin_0"
         }, 
         {
             "class_name": "Pitch", 
@@ -125,7 +135,7 @@
                 "tau": 100.0
             }, 
             "name": "coupling__pmtank3t__pmtank3t_0"
-        },
+        }, 
         {
             "class_name": "HeatSink", 
             "init_args": [
@@ -198,7 +208,7 @@
                 "tau": 100.0
             }, 
             "name": "coupling__tcylaft6__tcylaft6_0"
-        },
+        }, 
         {
             "class_name": "HeatSink", 
             "init_args": [
@@ -271,7 +281,7 @@
                 "tau": 100.0
             }, 
             "name": "coupling__tmzp_my__tmzp_my_0"
-        },
+        }, 
         {
             "class_name": "Node", 
             "init_args": [
@@ -279,6 +289,71 @@
             ], 
             "init_kwargs": {}, 
             "name": "tephin"
+        }, 
+        {
+            "class_name": "HeatSink", 
+            "init_args": [
+                "tephin_0"
+            ], 
+            "init_kwargs": {
+                "T": 20.0, 
+                "tau": 30.0
+            }, 
+            "name": "heatsink__tephin_0"
+        }, 
+        {
+            "class_name": "SolarHeat", 
+            "init_args": [
+                "tephin_0", 
+                "pitch", 
+                "eclipse", 
+                [
+                    45, 
+                    60, 
+                    80, 
+                    90, 
+                    100, 
+                    110, 
+                    120, 
+                    130, 
+                    140, 
+                    150, 
+                    160, 
+                    180
+                ], 
+                [
+                    0.1, 
+                    0.1, 
+                    0.1, 
+                    0.1, 
+                    0.1, 
+                    0.1, 
+                    0.1, 
+                    0.1, 
+                    0.1, 
+                    0.1, 
+                    0.1, 
+                    0.1
+                ]
+            ], 
+            "init_kwargs": {
+                "ampl": 0.003851, 
+                "epoch": "2013:001", 
+                "tau": 365, 
+                "var_func": "linear"
+            }, 
+            "name": "solarheat__tephin_0"
+        }, 
+        {
+            "class_name": "Coupling", 
+            "init_args": [
+                "tephin", 
+                "tephin_0"
+            ], 
+            "init_kwargs": {
+                "tau": 100.0
+            }, 
+            "name": "coupling__tephin__tephin_0"
         }, 
         {
             "class_name": "Coupling", 
@@ -314,23 +389,24 @@
             "name": "coupling__tephin__tmzp_my"
         }
     ], 
-    "datestart": "2012:256:12:04:32.816", 
-    "datestop": "2014:100:11:51:20.816", 
+    "datestart": "2012:181:12:05:05.816", 
+    "datestop": "2013:180:11:52:16.816", 
     "dt": 328.0, 
     "gui_config": {
-        "filename": "/home/mdahmer/chandra/thermalmodels/chandra_models/chandra_models/xija/minusyz/pmtank3t_spec_linear.json", 
+        "filename": "/home/mdahmer/ThermalModels/xija/chandra_models/chandra_models/xija/minusyz/minusyz_spec_linear.json", 
         "plot_names": [
-            "pmtank3t data__time", 
-            "pmtank3t resid__time", 
-            "solarheat__pmtank3t_0 solar_heat__pitch"
+            "tephin data__time", 
+            "tephin resid__time"
         ], 
         "set_data_vals": {
-            "pmtank3t_0": 30.0,
-            "tcylaft6_0": 30.0
+            "pmtank3t_0": 30.0, 
+            "tcylaft6_0": 30.0, 
+            "tephin_0": 30.0, 
+            "tmzp_my_0": 30.0
         }, 
         "size": [
-            2436, 
-            1174
+            2000, 
+            1005
         ]
     }, 
     "mval_names": [], 
@@ -499,7 +575,7 @@
         {
             "comp_name": "solarheat__pmtank3t_0", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "solarheat__pmtank3t_0__dP_45", 
             "max": 1.0, 
             "min": -1.0, 
@@ -509,7 +585,7 @@
         {
             "comp_name": "solarheat__pmtank3t_0", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "solarheat__pmtank3t_0__dP_60", 
             "max": 1.0, 
             "min": -1.0, 
@@ -519,7 +595,7 @@
         {
             "comp_name": "solarheat__pmtank3t_0", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "solarheat__pmtank3t_0__dP_80", 
             "max": 1.0, 
             "min": -1.0, 
@@ -529,7 +605,7 @@
         {
             "comp_name": "solarheat__pmtank3t_0", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "solarheat__pmtank3t_0__dP_90", 
             "max": 1.0, 
             "min": -1.0, 
@@ -539,7 +615,7 @@
         {
             "comp_name": "solarheat__pmtank3t_0", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "solarheat__pmtank3t_0__dP_100", 
             "max": 1.0, 
             "min": -1.0, 
@@ -549,7 +625,7 @@
         {
             "comp_name": "solarheat__pmtank3t_0", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "solarheat__pmtank3t_0__dP_110", 
             "max": 1.0, 
             "min": -1.0, 
@@ -559,7 +635,7 @@
         {
             "comp_name": "solarheat__pmtank3t_0", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "solarheat__pmtank3t_0__dP_120", 
             "max": 1.0, 
             "min": -1.0, 
@@ -569,7 +645,7 @@
         {
             "comp_name": "solarheat__pmtank3t_0", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "solarheat__pmtank3t_0__dP_130", 
             "max": 1.0, 
             "min": -1.0, 
@@ -579,17 +655,17 @@
         {
             "comp_name": "solarheat__pmtank3t_0", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "solarheat__pmtank3t_0__dP_140", 
             "max": 1.0, 
             "min": -1.0, 
             "name": "dP_140", 
-            "val": 0.6
+            "val": 0.59999999999999998
         }, 
         {
             "comp_name": "solarheat__pmtank3t_0", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "solarheat__pmtank3t_0__dP_150", 
             "max": 1.0, 
             "min": -1.0, 
@@ -599,7 +675,7 @@
         {
             "comp_name": "solarheat__pmtank3t_0", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "solarheat__pmtank3t_0__dP_160", 
             "max": 1.0, 
             "min": -1.0, 
@@ -609,7 +685,7 @@
         {
             "comp_name": "solarheat__pmtank3t_0", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "solarheat__pmtank3t_0__dP_180", 
             "max": 1.0, 
             "min": -1.0, 
@@ -655,11 +731,7 @@
             "min": 300.0, 
             "name": "tau", 
             "val": 367.63082598280033
-        },
-
-
-
-
+        }, 
         {
             "comp_name": "heatsink__tcylaft6_0", 
             "fmt": "{:.4g}", 
@@ -933,7 +1005,7 @@
         {
             "comp_name": "solarheat__tcylaft6_0", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "solarheat__tcylaft6_0__ampl", 
             "max": 1.0, 
             "min": -1.0, 
@@ -959,11 +1031,7 @@
             "min": 100.0, 
             "name": "tau", 
             "val": 136.22010571517831
-        },
-
-
-
-
+        }, 
         {
             "comp_name": "heatsink__tmzp_my_0", 
             "fmt": "{:.4g}", 
@@ -1187,7 +1255,7 @@
         {
             "comp_name": "solarheat__tmzp_my_0", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "solarheat__tmzp_my_0__dP_140", 
             "max": 1.0, 
             "min": -1.0, 
@@ -1197,7 +1265,7 @@
         {
             "comp_name": "solarheat__tmzp_my_0", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "solarheat__tmzp_my_0__dP_150", 
             "max": 1.0, 
             "min": -1.0, 
@@ -1207,7 +1275,7 @@
         {
             "comp_name": "solarheat__tmzp_my_0", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "solarheat__tmzp_my_0__dP_160", 
             "max": 0.0, 
             "min": -2.0, 
@@ -1217,7 +1285,7 @@
         {
             "comp_name": "solarheat__tmzp_my_0", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "solarheat__tmzp_my_0__dP_180", 
             "max": 0.0, 
             "min": -2.0, 
@@ -1265,36 +1333,335 @@
             "val": 100.10654669294715
         }, 
         {
-            "comp_name": "coupling__tephin__pmtank3t", 
+            "comp_name": "heatsink__tephin_0", 
             "fmt": "{:.4g}", 
             "frozen": true, 
+            "full_name": "heatsink__tephin_0__T", 
+            "max": 100.0, 
+            "min": -100.0, 
+            "name": "T", 
+            "val": 22.770606875932149
+        }, 
+        {
+            "comp_name": "heatsink__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "heatsink__tephin_0__tau", 
+            "max": 100.0, 
+            "min": 2.0, 
+            "name": "tau", 
+            "val": 3.8883320997311008
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__P_45", 
+            "max": 8.0, 
+            "min": 3.0, 
+            "name": "P_45", 
+            "val": 5.3856747415256105
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__P_60", 
+            "max": 14.0, 
+            "min": 3.0, 
+            "name": "P_60", 
+            "val": 9.6675400626752808
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__P_80", 
+            "max": 16.0, 
+            "min": 3.0, 
+            "name": "P_80", 
+            "val": 13.707251517848253
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__P_90", 
+            "max": 16.0, 
+            "min": 3.0, 
+            "name": "P_90", 
+            "val": 14.248162414120172
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__P_100", 
+            "max": 16.0, 
+            "min": 3.0, 
+            "name": "P_100", 
+            "val": 15.02179096162766
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__P_110", 
+            "max": 16.0, 
+            "min": 3.0, 
+            "name": "P_110", 
+            "val": 14.698884543599508
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__P_120", 
+            "max": 16.0, 
+            "min": 3.0, 
+            "name": "P_120", 
+            "val": 14.273665277599626
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__P_130", 
+            "max": 13.0, 
+            "min": 3.0, 
+            "name": "P_130", 
+            "val": 12.999995609862662
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__P_140", 
+            "max": 13.0, 
+            "min": 3.0, 
+            "name": "P_140", 
+            "val": 11.238506088191786
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__P_150", 
+            "max": 10.0, 
+            "min": 3.0, 
+            "name": "P_150", 
+            "val": 8.1856362339430202
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__P_160", 
+            "max": 10.0, 
+            "min": 3.0, 
+            "name": "P_160", 
+            "val": 5.2157123221980815
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__P_180", 
+            "max": 5.0, 
+            "min": -1.0, 
+            "name": "P_180", 
+            "val": -0.21500535192267828
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__dP_45", 
+            "max": 2.0, 
+            "min": -1.0, 
+            "name": "dP_45", 
+            "val": 0.043005296772222222
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__dP_60", 
+            "max": 2.0, 
+            "min": -1.0, 
+            "name": "dP_60", 
+            "val": 0.87358746705010293
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__dP_80", 
+            "max": 2.0, 
+            "min": -1.0, 
+            "name": "dP_80", 
+            "val": 1.0039912876557613
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__dP_90", 
+            "max": 2.0, 
+            "min": -1.0, 
+            "name": "dP_90", 
+            "val": 1.3415355596148584
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__dP_100", 
+            "max": 2.0, 
+            "min": -1.0, 
+            "name": "dP_100", 
+            "val": 1.0208704910031663
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__dP_110", 
+            "max": 2.0, 
+            "min": -1.0, 
+            "name": "dP_110", 
+            "val": 0.83549798026124045
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__dP_120", 
+            "max": 2.0, 
+            "min": -1.0, 
+            "name": "dP_120", 
+            "val": 1.5128550415650588
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__dP_130", 
+            "max": 2.0, 
+            "min": -1.0, 
+            "name": "dP_130", 
+            "val": 1.1114858496779383
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__dP_140", 
+            "max": 2.0, 
+            "min": -1.0, 
+            "name": "dP_140", 
+            "val": 0.88211966278310072
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__dP_150", 
+            "max": 2.0, 
+            "min": -1.0, 
+            "name": "dP_150", 
+            "val": 0.95502898503674061
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__dP_160", 
+            "max": 2.0, 
+            "min": -1.0, 
+            "name": "dP_160", 
+            "val": 0.72041484162476821
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__dP_180", 
+            "max": 2.0, 
+            "min": -1.0, 
+            "name": "dP_180", 
+            "val": 0.5675417097908797
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__tau", 
+            "max": 365.25, 
+            "min": 365.0, 
+            "name": "tau", 
+            "val": 365.0
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__ampl", 
+            "max": 1.0, 
+            "min": -1.0, 
+            "name": "ampl", 
+            "val": 0.56186542911341597
+        }, 
+        {
+            "comp_name": "solarheat__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "solarheat__tephin_0__bias", 
+            "max": 2.0, 
+            "min": -1.0, 
+            "name": "bias", 
+            "val": 0.0
+        }, 
+        {
+            "comp_name": "coupling__tephin__tephin_0", 
+            "fmt": "{:.4g}", 
+            "frozen": false, 
+            "full_name": "coupling__tephin__tephin_0__tau", 
+            "max": 80.0, 
+            "min": 10.0, 
+            "name": "tau", 
+            "val": 41.188035031798634
+        }, 
+        {
+            "comp_name": "coupling__tephin__pmtank3t", 
+            "fmt": "{:.4g}", 
+            "frozen": false, 
             "full_name": "coupling__tephin__pmtank3t__tau", 
-            "max": 300.0, 
+            "max": 1000.0, 
             "min": 100.0, 
             "name": "tau", 
-            "val": 100.10654669294715
+            "val": 547.58958052560479
         }, 
         {
             "comp_name": "coupling__tephin__tcylaft6", 
             "fmt": "{:.4g}", 
-            "frozen": true, 
+            "frozen": false, 
             "full_name": "coupling__tephin__tcylaft6__tau", 
-            "max": 300.0, 
+            "max": 1000.0, 
             "min": 100.0, 
             "name": "tau", 
-            "val": 100.10654669294715
+            "val": 999.99730752607138
         }, 
         {
             "comp_name": "coupling__tephin__tmzp_my", 
             "fmt": "{:.4g}", 
-            "frozen": true, 
+            "frozen": false, 
             "full_name": "coupling__tephin__tmzp_my__tau", 
-            "max": 300.0, 
-            "min": 100.0, 
+            "max": 200.0, 
+            "min": 20.0, 
             "name": "tau", 
-            "val": 100.10654669294715
+            "val": 96.068042960292246
         }
-
     ], 
     "tlm_code": null
 }
