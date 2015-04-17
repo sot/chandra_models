@@ -13019,8 +13019,8 @@
             "name": "mask__pm2thv1t_lt"
         }
     ], 
-    "datestart": "2013:365:12:04:48.816", 
-    "datestop": "2014:365:11:52:00.816", 
+    "datestart": "2012:196:12:03:52.816", 
+    "datestop": "2015:100:11:49:28.816", 
     "dt": 328.0, 
     "gui_config": {
         "filename": "/home/mdahmer/ThermalModels/xija_model_updates/mups/chandra_models/chandra_models/xija/mups_valve/pm2thv1t_spec.json", 
@@ -13034,7 +13034,7 @@
             "mups0": 80.0
         }, 
         "size": [
-            1600, 
+            1505, 
             877
         ]
     }, 
@@ -13069,7 +13069,7 @@
             "max": 10.0, 
             "min": 0.0, 
             "name": "P_45", 
-            "val": 5.2243889427217063
+            "val": 5.224388942721706
         }, 
         {
             "comp_name": "solarheat__mups0", 
@@ -13079,7 +13079,7 @@
             "max": 10.0, 
             "min": 0.0, 
             "name": "P_60", 
-            "val": 5.4231416565129917
+            "val": 5.423141656512992
         }, 
         {
             "comp_name": "solarheat__mups0", 
@@ -13089,7 +13089,7 @@
             "max": 10.0, 
             "min": 0.0, 
             "name": "P_75", 
-            "val": 4.9622798758900508
+            "val": 4.962279875890051
         }, 
         {
             "comp_name": "solarheat__mups0", 
@@ -13099,7 +13099,7 @@
             "max": 10.0, 
             "min": 0.0, 
             "name": "P_90", 
-            "val": 4.4080602069049561
+            "val": 4.408060206904956
         }, 
         {
             "comp_name": "solarheat__mups0", 
@@ -13109,7 +13109,7 @@
             "max": 10.0, 
             "min": 0.0, 
             "name": "P_110", 
-            "val": 4.3048250865257209
+            "val": 4.304825086525721
         }, 
         {
             "comp_name": "solarheat__mups0", 
@@ -13139,7 +13139,7 @@
             "max": 5.0, 
             "min": -1.0, 
             "name": "P_150", 
-            "val": 2.4268452250421539
+            "val": 2.426845225042154
         }, 
         {
             "comp_name": "solarheat__mups0", 
@@ -13159,7 +13159,7 @@
             "max": 0.5, 
             "min": 0.0, 
             "name": "dP_45", 
-            "val": 0.20000000000000001
+            "val": 0.2
         }, 
         {
             "comp_name": "solarheat__mups0", 
@@ -13169,7 +13169,7 @@
             "max": 0.5, 
             "min": 0.0, 
             "name": "dP_60", 
-            "val": 0.20000000000000001
+            "val": 0.2
         }, 
         {
             "comp_name": "solarheat__mups0", 
@@ -13179,7 +13179,7 @@
             "max": 0.5, 
             "min": 0.0, 
             "name": "dP_75", 
-            "val": 0.20000000000000001
+            "val": 0.2
         }, 
         {
             "comp_name": "solarheat__mups0", 
@@ -13189,7 +13189,7 @@
             "max": 0.5, 
             "min": 0.0, 
             "name": "dP_90", 
-            "val": 0.20000000000000001
+            "val": 0.2
         }, 
         {
             "comp_name": "solarheat__mups0", 
@@ -13199,7 +13199,7 @@
             "max": 0.5, 
             "min": 0.0, 
             "name": "dP_110", 
-            "val": 0.20000000000000001
+            "val": 0.2
         }, 
         {
             "comp_name": "solarheat__mups0", 
@@ -13209,7 +13209,7 @@
             "max": 0.5, 
             "min": 0.0, 
             "name": "dP_120", 
-            "val": 0.20000000000000001
+            "val": 0.2
         }, 
         {
             "comp_name": "solarheat__mups0", 
@@ -13219,7 +13219,7 @@
             "max": 0.5, 
             "min": 0.0, 
             "name": "dP_130", 
-            "val": 0.20000000000000001
+            "val": 0.2
         }, 
         {
             "comp_name": "solarheat__mups0", 
@@ -13229,7 +13229,7 @@
             "max": 0.5, 
             "min": 0.0, 
             "name": "dP_150", 
-            "val": 0.20000000000000001
+            "val": 0.2
         }, 
         {
             "comp_name": "solarheat__mups0", 
@@ -13239,7 +13239,7 @@
             "max": 0.5, 
             "min": 0.0, 
             "name": "dP_170", 
-            "val": 0.20000000000000001
+            "val": 0.2
         }, 
         {
             "comp_name": "solarheat__mups0", 
@@ -13259,7 +13259,7 @@
             "max": 1.0, 
             "min": -1.0, 
             "name": "ampl", 
-            "val": 0.069763681210484249
+            "val": 0.06976368121048425
         }, 
         {
             "comp_name": "solarheat__mups0", 
@@ -13279,7 +13279,7 @@
             "max": 100.0, 
             "min": 0.1, 
             "name": "tau", 
-            "val": 0.22029547098765256
+            "val": 0.3
         }, 
         {
             "comp_name": "mask__pm2thv1t_gt", 
