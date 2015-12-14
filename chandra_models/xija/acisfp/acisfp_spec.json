@@ -218,7 +218,7 @@
             ], 
             "init_kwargs": {
                 "P": 0.1, 
-                "T_set": -119.9
+                "T_set": -120.0
             }, 
             "name": "thermostat_heat__fptemp"
         }, 
@@ -540,7 +540,7 @@
             "frozen": true, 
             "full_name": "thermostat_heat__fptemp__T_set", 
             "max": -115.0, 
-            "min": -119.9, 
+            "min": -126.0, 
             "name": "T_set", 
             "val": -119.77006835708549
         }, 
@@ -550,7 +550,7 @@
             "frozen": true, 
             "full_name": "heatsink__fptemp__T", 
             "max": -100.0, 
-            "min": -119.9, 
+            "min": -200.0, 
             "name": "T", 
             "val": -194.53155524191487
         }, 
@@ -922,7 +922,7 @@
             "max": 1.0, 
             "min": -1.0, 
             "name": "dh_heater_bias", 
-            "val": 0.041
+            "val": 0.029867187499999996
         }, 
         {
             "comp_name": "heatsink__1cbat", 
