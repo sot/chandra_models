@@ -27,6 +27,10 @@
         [
             "2015:076:04:37:42", 
             "2015:078:03:11:26"
+        ], 
+        [
+            "2015:264:18:00:00", 
+            "2015:266:02:00:00"
         ]
     ], 
     "comps": [
@@ -248,21 +252,21 @@
             "name": "dpa_power"
         }
     ], 
-    "datestart": "2014:312:12:02:48.816", 
-    "datestop": "2015:347:11:52:40.816", 
+    "datestart": "2014:312:12:13:44.816", 
+    "datestop": "2015:347:11:36:16.816", 
     "dt": 328.0, 
     "gui_config": {
-        "filename": "/data/baffin/tom/git/chandra_models/chandra_models/xija/psmc/psmc_spec_roll.json", 
+        "filename": "/data/baffin/tom/git/chandra_models/chandra_models/xija/psmc/psmc_spec4.json", 
         "plot_names": [
             "1pdeaat data__time", 
             "1pdeaat resid__time", 
-            "sim_z data__time", 
-            "1pdeaat resid__data"
+            "1pdeaat resid__data", 
+            "psmc_solarheat__pin1at solar_heat__pitch"
         ], 
         "set_data_vals": {}, 
         "size": [
-            1868, 
-            1069
+            1388, 
+            781
         ]
     }, 
     "mval_names": [], 
@@ -276,7 +280,7 @@
             "max": 60.0, 
             "min": -10.0, 
             "name": "val", 
-            "val": 12.0
+            "val": 20.0
         }, 
         {
             "comp_name": "coupling__pin1at__1pdeaat", 
@@ -466,7 +470,7 @@
             "max": 10.0, 
             "min": -10.0, 
             "name": "P_aciss_45", 
-            "val": 3.6357547477636145
+            "val": 3.6838905503727912
         }, 
         {
             "comp_name": "psmc_solarheat__pin1at", 
@@ -476,7 +480,7 @@
             "max": 10.0, 
             "min": -10.0, 
             "name": "P_aciss_55", 
-            "val": 3.6742455404641583
+            "val": 3.6428823082668922
         }, 
         {
             "comp_name": "psmc_solarheat__pin1at", 
@@ -486,7 +490,7 @@
             "max": 10.0, 
             "min": -10.0, 
             "name": "P_aciss_65", 
-            "val": 2.9515523751198538
+            "val": 2.5791310221962482
         }, 
         {
             "comp_name": "psmc_solarheat__pin1at", 
@@ -496,12 +500,12 @@
             "max": 10.0, 
             "min": -10.0, 
             "name": "P_aciss_75", 
-            "val": 2.8339489164965954
+            "val": 2.5976221202186078
         }, 
         {
             "comp_name": "psmc_solarheat__pin1at", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "psmc_solarheat__pin1at__P_aciss_85", 
             "max": 10.0, 
             "min": -10.0, 
@@ -511,7 +515,7 @@
         {
             "comp_name": "psmc_solarheat__pin1at", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "psmc_solarheat__pin1at__P_aciss_95", 
             "max": 10.0, 
             "min": -10.0, 
@@ -521,7 +525,7 @@
         {
             "comp_name": "psmc_solarheat__pin1at", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "psmc_solarheat__pin1at__P_aciss_130", 
             "max": 10.0, 
             "min": -10.0, 
@@ -546,7 +550,7 @@
             "max": 10.0, 
             "min": -10.0, 
             "name": "P_acisi_45", 
-            "val": 3.8690915024077239
+            "val": 3.9369551546088788
         }, 
         {
             "comp_name": "psmc_solarheat__pin1at", 
@@ -556,7 +560,7 @@
             "max": 10.0, 
             "min": -10.0, 
             "name": "P_acisi_55", 
-            "val": 3.7949215235275027
+            "val": 3.7570042728627682
         }, 
         {
             "comp_name": "psmc_solarheat__pin1at", 
@@ -566,7 +570,7 @@
             "max": 10.0, 
             "min": -10.0, 
             "name": "P_acisi_65", 
-            "val": 3.0175625390575416
+            "val": 2.6301123244524356
         }, 
         {
             "comp_name": "psmc_solarheat__pin1at", 
@@ -576,12 +580,12 @@
             "max": 10.0, 
             "min": -10.0, 
             "name": "P_acisi_75", 
-            "val": 2.8655018795955671
+            "val": 2.6396326946321365
         }, 
         {
             "comp_name": "psmc_solarheat__pin1at", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "psmc_solarheat__pin1at__P_acisi_85", 
             "max": 10.0, 
             "min": -10.0, 
@@ -591,7 +595,7 @@
         {
             "comp_name": "psmc_solarheat__pin1at", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "psmc_solarheat__pin1at__P_acisi_95", 
             "max": 10.0, 
             "min": -10.0, 
@@ -601,7 +605,7 @@
         {
             "comp_name": "psmc_solarheat__pin1at", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "psmc_solarheat__pin1at__P_acisi_130", 
             "max": 10.0, 
             "min": -10.0, 
@@ -621,42 +625,42 @@
         {
             "comp_name": "psmc_solarheat__pin1at", 
             "fmt": "{:.4g}", 
-            "frozen": true, 
+            "frozen": false, 
             "full_name": "psmc_solarheat__pin1at__dP_45", 
             "max": 1.0, 
             "min": -1.0, 
             "name": "dP_45", 
-            "val": -0.10450206229177311
+            "val": -0.19295318029373645
         }, 
         {
             "comp_name": "psmc_solarheat__pin1at", 
             "fmt": "{:.4g}", 
-            "frozen": true, 
+            "frozen": false, 
             "full_name": "psmc_solarheat__pin1at__dP_55", 
             "max": 1.0, 
             "min": -1.0, 
             "name": "dP_55", 
-            "val": -0.34845267733121388
+            "val": -0.32764516125984589
         }, 
         {
             "comp_name": "psmc_solarheat__pin1at", 
             "fmt": "{:.4g}", 
-            "frozen": true, 
+            "frozen": false, 
             "full_name": "psmc_solarheat__pin1at__dP_65", 
             "max": 1.0, 
             "min": -1.0, 
             "name": "dP_65", 
-            "val": 0.073170731707317138
+            "val": 0.51674679484842045
         }, 
         {
             "comp_name": "psmc_solarheat__pin1at", 
             "fmt": "{:.4g}", 
-            "frozen": true, 
+            "frozen": false, 
             "full_name": "psmc_solarheat__pin1at__dP_75", 
             "max": 1.0, 
             "min": -1.0, 
             "name": "dP_75", 
-            "val": -0.17073170731707321
+            "val": -0.05851327604837412
         }, 
         {
             "comp_name": "psmc_solarheat__pin1at", 
@@ -736,7 +740,7 @@
             "max": 5.0, 
             "min": -5.0, 
             "name": "P_plus_y", 
-            "val": -0.14815788523018594
+            "val": -0.16448912588494521
         }, 
         {
             "comp_name": "solarheat_off_nom_roll", 
@@ -746,7 +750,7 @@
             "max": 5.0, 
             "min": -5.0, 
             "name": "P_minus_y", 
-            "val": -1.8667279793205609
+            "val": -2.653643647390199
         }, 
         {
             "comp_name": "heatsink__pin1at", 
