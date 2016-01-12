@@ -395,20 +395,20 @@
             "val": -0.09243006653563163
         }, 
         {
-            "comp_name": "solarheat_off_nom_roll", 
+            "comp_name": "solarheat_off_nom_roll__1dpamzt", 
             "fmt": "{:.4g}", 
             "frozen": false, 
-            "full_name": "solarheat_off_nom_roll__P_plus_y", 
+            "full_name": "solarheat_off_nom_roll__1dpamzt__P_plus_y", 
             "max": 5.0, 
             "min": -5.0, 
             "name": "P_plus_y", 
             "val": 1.105281354525487
         }, 
         {
-            "comp_name": "solarheat_off_nom_roll", 
+            "comp_name": "solarheat_off_nom_roll__1dpamzt", 
             "fmt": "{:.4g}", 
             "frozen": false, 
-            "full_name": "solarheat_off_nom_roll__P_minus_y", 
+            "full_name": "solarheat_off_nom_roll__1dpamzt__P_minus_y", 
             "max": 5.0, 
             "min": -5.0, 
             "name": "P_minus_y", 
