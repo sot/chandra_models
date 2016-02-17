@@ -163,7 +163,7 @@
             "max": 100.0, 
             "min": -300.0, 
             "name": "T", 
-            "val": -41.570331221179103
+            "val": -32.5
         }, 
         {
             "comp_name": "heatsink__aca0", 
@@ -198,92 +198,92 @@
         {
             "comp_name": "solarheat__aca0", 
             "fmt": "{:.4g}", 
-            "frozen": true, 
+            "frozen": false, 
             "full_name": "solarheat__aca0__P_45", 
-            "max": 2.0, 
-            "min": -1.0, 
+            "max": 1.0, 
+            "min": -0.5, 
             "name": "P_45", 
-            "val": 0.47680737249470029
+            "val": 0.30974157561445154
         }, 
         {
             "comp_name": "solarheat__aca0", 
             "fmt": "{:.4g}", 
-            "frozen": true, 
+            "frozen": false, 
             "full_name": "solarheat__aca0__P_60", 
-            "max": 2.0, 
-            "min": -1.0, 
+            "max": 1.0, 
+            "min": -0.5, 
             "name": "P_60", 
-            "val": 0.61491118027135538
+            "val": 0.44838695711867127
         }, 
         {
             "comp_name": "solarheat__aca0", 
             "fmt": "{:.4g}", 
-            "frozen": true, 
+            "frozen": false, 
             "full_name": "solarheat__aca0__P_75", 
-            "max": 2.0, 
-            "min": -1.0, 
+            "max": 1.0, 
+            "min": 0.0, 
             "name": "P_75", 
-            "val": 0.69091506560018334
+            "val": 0.5236238981254977
         }, 
         {
             "comp_name": "solarheat__aca0", 
             "fmt": "{:.4g}", 
-            "frozen": true, 
+            "frozen": false, 
             "full_name": "solarheat__aca0__P_90", 
-            "max": 2.0, 
-            "min": -1.0, 
+            "max": 1.0, 
+            "min": 0.0, 
             "name": "P_90", 
-            "val": 0.74303211396965796
+            "val": 0.57731716009453748
         }, 
         {
             "comp_name": "solarheat__aca0", 
             "fmt": "{:.4g}", 
-            "frozen": true, 
+            "frozen": false, 
             "full_name": "solarheat__aca0__P_110", 
-            "max": 2.0, 
-            "min": -1.0, 
+            "max": 1.0, 
+            "min": 0.0, 
             "name": "P_110", 
-            "val": 0.69110601131739502
+            "val": 0.52276994173779745
         }, 
         {
             "comp_name": "solarheat__aca0", 
             "fmt": "{:.4g}", 
-            "frozen": true, 
+            "frozen": false, 
             "full_name": "solarheat__aca0__P_120", 
-            "max": 2.0, 
-            "min": -1.0, 
+            "max": 1.0, 
+            "min": 0.0, 
             "name": "P_110", 
-            "val": 0.66447953863984355
+            "val": 0.49774119813886203
         }, 
         {
             "comp_name": "solarheat__aca0", 
             "fmt": "{:.4g}", 
-            "frozen": true, 
+            "frozen": false, 
             "full_name": "solarheat__aca0__P_130", 
-            "max": 2.0, 
-            "min": -1.0, 
+            "max": 1.0, 
+            "min": 0.0, 
             "name": "P_130", 
-            "val": 0.62145053743282042
+            "val": 0.45455969723393819
         }, 
         {
             "comp_name": "solarheat__aca0", 
             "fmt": "{:.4g}", 
-            "frozen": true, 
+            "frozen": false, 
             "full_name": "solarheat__aca0__P_150", 
-            "max": 2.0, 
-            "min": -1.0, 
+            "max": 1.0, 
+            "min": -0.5, 
             "name": "P_150", 
-            "val": 0.45846718122533137
+            "val": 0.29194449080438828
         }, 
         {
             "comp_name": "solarheat__aca0", 
             "fmt": "{:.4g}", 
-            "frozen": true, 
+            "frozen": false, 
             "full_name": "solarheat__aca0__P_170", 
-            "max": 2.0, 
+            "max": 1.0, 
             "min": -1.0, 
             "name": "P_170", 
-            "val": 0.21343875903552795
+            "val": 0.049203013245576653
         }, 
         {
             "comp_name": "solarheat__aca0", 
@@ -403,7 +403,7 @@
             "max": 2.0, 
             "min": -1.0, 
             "name": "bias", 
-            "val": 0.03783628082275392
+            "val": 0.0
         }, 
         {
             "comp_name": "coupling__aacccdpt__aca0", 
