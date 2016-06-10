@@ -69,7 +69,7 @@
             ], 
             "init_kwargs": {
                 "ampl": 0.003851, 
-                "epoch": "2015:232", 
+                "epoch": "2015:100", 
                 "tau": 365, 
                 "var_func": "linear"
             }, 
@@ -113,10 +113,20 @@
                 "roll_comp": "roll"
             }, 
             "name": "solarheat_off_nom_roll__pftank2t"
+        }, 
+        {
+            "class_name": "Mask", 
+            "init_args": [], 
+            "init_kwargs": {
+                "node": "pftank2t", 
+                "op": "lt", 
+                "val": 24.0
+            }, 
+            "name": "mask__pftank2t_lt"
         }
     ], 
-    "datestart": "2015:050:12:04:24.816", 
-    "datestop": "2016:050:11:51:36.816", 
+    "datestart": "2014:100:12:02:16.816", 
+    "datestop": "2016:100:11:53:04.816", 
     "dt": 328.0, 
     "gui_config": {
         "filename": "/home/mdahmer/ThermalModels/xija_model_updates/pftank2t/chandra_models/chandra_models/xija/pftank2t/pftank2t_spec.json", 
@@ -130,8 +140,8 @@
             "pf0tank2t": 22.0
         }, 
         "size": [
-            1552, 
-            708
+            1600, 
+            750
         ]
     }, 
     "mval_names": [], 
@@ -145,7 +155,7 @@
             "max": 100.0, 
             "min": -300.0, 
             "name": "T", 
-            "val": 30.726868179682391
+            "val": 30.72598927343239
         }, 
         {
             "comp_name": "heatsink__pf0tank2t", 
@@ -175,7 +185,7 @@
             "max": 100.0, 
             "min": -50.0, 
             "name": "T_set", 
-            "val": 21.165899051568488
+            "val": 22.293787359817099
         }, 
         {
             "comp_name": "solarheat__pf0tank2t", 
@@ -185,7 +195,7 @@
             "max": 1.0, 
             "min": -1.0, 
             "name": "P_45", 
-            "val": 0.034857518591958597
+            "val": 0.032283507387526993
         }, 
         {
             "comp_name": "solarheat__pf0tank2t", 
@@ -195,7 +205,7 @@
             "max": 1.0, 
             "min": -1.0, 
             "name": "P_60", 
-            "val": 0.03306989275860342
+            "val": 0.039783678537832906
         }, 
         {
             "comp_name": "solarheat__pf0tank2t", 
@@ -205,7 +215,7 @@
             "max": 1.0, 
             "min": -1.0, 
             "name": "P_90", 
-            "val": 0.016398808888761725
+            "val": 0.010292374137471836
         }, 
         {
             "comp_name": "solarheat__pf0tank2t", 
@@ -215,7 +225,7 @@
             "max": 1.0, 
             "min": -1.0, 
             "name": "P_120", 
-            "val": 0.0014686830542588376
+            "val": -0.0035684724204203392
         }, 
         {
             "comp_name": "solarheat__pf0tank2t", 
@@ -225,7 +235,7 @@
             "max": 1.0, 
             "min": -1.0, 
             "name": "P_145", 
-            "val": -0.032194219592162163
+            "val": -0.035192402467136986
         }, 
         {
             "comp_name": "solarheat__pf0tank2t", 
@@ -235,7 +245,7 @@
             "max": 1.0, 
             "min": -1.0, 
             "name": "P_180", 
-            "val": -0.071969601248385001
+            "val": -0.073880705788761242
         }, 
         {
             "comp_name": "solarheat__pf0tank2t", 
@@ -345,7 +355,7 @@
             "max": 0.5, 
             "min": -0.5, 
             "name": "P_plus_y", 
-            "val": 0.010319568578282371
+            "val": 0.00016449905006952025
         }, 
         {
             "comp_name": "solarheat_off_nom_roll__pftank2t", 
@@ -355,7 +365,17 @@
             "max": 0.5, 
             "min": -0.5, 
             "name": "P_minus_y", 
-            "val": -0.048537395976715858
+            "val": -0.032780897632113407
+        }, 
+        {
+            "comp_name": "mask__pftank2t_lt", 
+            "fmt": "{:.4g}", 
+            "frozen": true, 
+            "full_name": "mask__pftank2t_lt__val", 
+            "max": 50.0, 
+            "min": -50.0, 
+            "name": "val", 
+            "val": 24.0
         }
     ], 
     "tlm_code": null
