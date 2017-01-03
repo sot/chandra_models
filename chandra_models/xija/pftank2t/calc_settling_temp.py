@@ -81,7 +81,7 @@ def calc_model(start, pitch, model_spec):
 
 def main():
     opt = get_opt()
-    pitchs = range(45, 170, 5)
+    pitchs = list(range(45, 170, 5))
     model_spec = json.load(open(opt.model_spec, 'r'))
 
     plt.close(1)
