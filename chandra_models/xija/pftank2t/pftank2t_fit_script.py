@@ -8,8 +8,8 @@ import xijafit
 fueltank = xijafit.XijaFit('pftank2t_spec_prod_roll.json', set_data_exprs=(u'pf0tank2t=22.0',),
    quiet=False, name='pftank2t', start='2013:300', stop='2016:300')
 fueltank.model.write('model_conversion.py')
-print popen("python model_conversion.py pftank2t_spec_prod_roll.json", shell=True,
-   stdout=subprocess.PIPE)
+print(popen("python model_conversion.py pftank2t_spec_prod_roll.json", shell=True,
+            stdout=subprocess.PIPE))
 
 # Fit the model
 fueltank = xijafit.XijaFit('pftank2t_spec_prod_roll.json', set_data_exprs=(u'pf0tank2t=22.0',),

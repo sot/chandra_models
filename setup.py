@@ -1,6 +1,6 @@
 from setuptools import setup
 
-from chandra_models.version import __version__
+from chandra_models import __version__
 
 setup(
     name='chandra_models',

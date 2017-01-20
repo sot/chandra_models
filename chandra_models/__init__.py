@@ -1,2 +1,4 @@
 from .get_model_spec import *
-from .version import __version__
+
+
+__version__ = '3.11'
