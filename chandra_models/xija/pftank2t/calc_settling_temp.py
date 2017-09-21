@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# Licensed under a 3-clause BSD style license - see LICENSE.rst
 
 """
 Compute and plot the PFTANK2T settling temperature as a function of pitch and time::

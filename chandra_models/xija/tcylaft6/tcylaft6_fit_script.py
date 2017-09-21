@@ -1,3 +1,4 @@
+# Licensed under a 3-clause BSD style license - see LICENSE.rst
 import xijafit
 
 newmodel = xijafit.XijaFit('tcylaft6_model_spec_roll_base.json', set_data_exprs=(u'tcylaft6_0=22.0',),
