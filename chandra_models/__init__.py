@@ -2,4 +2,4 @@
 from .get_model_spec import *
 
 
-__version__ = '3.15'
+__version__ = '3.16'
