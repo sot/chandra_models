@@ -827,7 +827,7 @@
             "max": 80, 
             "min": 20, 
             "name": "pow_2xxx", 
-            "val": 47.338942639894853
+            "val": 37.73
         }, 
         {
             "comp_name": "dpa_power", 
