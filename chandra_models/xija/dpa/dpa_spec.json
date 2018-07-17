@@ -678,7 +678,7 @@
             "full_name": "dpa_power__pow_5xx0", 
             "max": 120, 
             "min": 20, 
-            "name": "pow_55x0", 
+            "name": "pow_5xx0", 
             "val": 55.88509680292602
         }, 
         {
@@ -688,7 +688,7 @@
             "full_name": "dpa_power__pow_5xx1", 
             "max": 120, 
             "min": 20, 
-            "name": "pow_5xxx", 
+            "name": "pow_5xx1", 
             "val": 68.48484848484848
         }, 
         {
