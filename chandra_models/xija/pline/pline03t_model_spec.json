@@ -3,12 +3,12 @@
         {
             "class_name": "Node",
             "init_args": [
-                "pnode0"
+                "pline03t0"
             ],
             "init_kwargs": {
                 "sigma": 100000.0
             },
-            "name": "pnode0"
+            "name": "pline03t0"
         },
         {
             "class_name": "Node",
@@ -80,13 +80,13 @@
         {
             "class_name": "HeatSink",
             "init_args": [
-                "pnode0"
+                "pline03t0"
             ],
             "init_kwargs": {
                 "T": 20.0,
                 "tau": 30.0
             },
-            "name": "heatsink__pnode0"
+            "name": "heatsink__pline03t0"
         },
         {
             "class_name": "HeatSink",
@@ -103,23 +103,23 @@
             "class_name": "Coupling",
             "init_args": [
                 "pline03t",
-                "pnode0"
+                "pline03t0"
             ],
             "init_kwargs": {
                 "tau": 100.0
             },
-            "name": "coupling__pline03t__pnode0"
+            "name": "coupling__pline03t__pline03t0"
         },
         {
             "class_name": "Coupling",
             "init_args": [
-                "pnode0",
+                "pline03t0",
                 "pline03t"
             ],
             "init_kwargs": {
                 "tau": 100.0
             },
-            "name": "coupling__pnode0__pline03t"
+            "name": "coupling__pline03t0__pline03t"
         },
         {
             "class_name": "SolarHeatOffNomRoll",
@@ -393,20 +393,20 @@
             "val": 0.0
         },
         {
-            "comp_name": "heatsink__pnode0",
+            "comp_name": "heatsink__pline03t0",
             "fmt": "{:.4g}",
             "frozen": true,
-            "full_name": "heatsink__pnode0__T",
+            "full_name": "heatsink__pline03t0__T",
             "max": 100.0,
             "min": -300.0,
             "name": "T",
             "val": 7.756447778626902
         },
         {
-            "comp_name": "heatsink__pnode0",
+            "comp_name": "heatsink__pline03t0",
             "fmt": "{:.4g}",
             "frozen": true,
-            "full_name": "heatsink__pnode0__tau",
+            "full_name": "heatsink__pline03t0__tau",
             "max": 500.0,
             "min": 2.0,
             "name": "tau",
@@ -433,20 +433,20 @@
             "val": 45.71230990870537
         },
         {
-            "comp_name": "coupling__pline03t__pnode0",
+            "comp_name": "coupling__pline03t__pline03t0",
             "fmt": "{:.4g}",
             "frozen": true,
-            "full_name": "coupling__pline03t__pnode0__tau",
+            "full_name": "coupling__pline03t__pline03t0__tau",
             "max": 200.0,
             "min": 2.0,
             "name": "tau",
             "val": 44.388895845014446
         },
         {
-            "comp_name": "coupling__pnode0__pline03t",
+            "comp_name": "coupling__pline03t0__pline03t",
             "fmt": "{:.4g}",
             "frozen": true,
-            "full_name": "coupling__pnode0__pline03t__tau",
+            "full_name": "coupling__pline03t0__pline03t__tau",
             "max": 2000.0,
             "min": 2.0,
             "name": "tau",
