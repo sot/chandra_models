@@ -1,46 +1,93 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 
 import xija
-from subprocess import Popen, PIPE
+import sys
+from os.path import expanduser
 
+home = expanduser("~")
+addthispath = home + '/AXAFLIB/xijafit/'
+sys.path.insert(0, addthispath)
 import xijafit
 
-# The python Xija model conversion layer is used to ensure a clean model definition is used.
-fueltank = xijafit.XijaFit('pftank2t_spec.json', set_data_exprs=(u'pf0tank2t=22.0',),
-   quiet=False, name='pftank2t', start='2014:190', stop='2017:190')
-fueltank.model.write('model_conversion.py')
-print(Popen("python model_conversion.py pftank2t_spec_new.json", shell=True,
-            stdout=PIPE))
+stars = '*'*80
+n = 0
 
-# Fit the model
-fueltank = xijafit.XijaFit('pftank2t_spec_new.json', set_data_exprs=(u'pf0tank2t=22.0',),
-   quiet=False, name='pftank2t', start='2014:190', stop='2017:190')
-fueltank.freeze_all()
-fueltank.thaw_solarheat_p()
-fueltank.thaw_solarheat_roll()
-fueltank.thaw_param(u'coupling__pftank2t__pf0tank2t__tau')
-fueltank.fit(method='moncar')
+newmodel = xijafit.XijaFit('pftank2t_model_spec.json', start='2014:001', stop='2018:200',
+    set_data_exprs=(u'pf0tank2t=30.0',), quiet=False, name='pftank2t')
 
-fueltank.freeze_all()
-fueltank.thaw_param(u'solarheat__pf0tank2t__ampl')
-fueltank.fit(method='moncar')
+n = n + 1
+print('{}\nStep {}\n{}'.format(stars, n, stars))
+newmodel.freeze_all()
+newmodel.thaw_param(u'heatsink__pf0tank2t__tau')
+newmodel.thaw_param(u'heatsink__pf0tank2t__T')
+newmodel.thaw_param(u'coupling__pftank2t__pf0tank2t')
+newmodel.fit(method='moncar')
 
-fueltank.freeze_all()
-fueltank.thaw_solarheat_p()
-fueltank.thaw_solarheat_roll()
-fueltank.thaw_param(u'coupling__pftank2t__pf0tank2t__tau')
-fueltank.fit(method='moncar')
+n = n + 1
+print('{}\nStep {}\n{}'.format(stars, n, stars))
+newmodel.freeze_all()
+newmodel.thaw_solarheat_p()
+newmodel.thaw_param(u'coupling__pftank2t__pf0tank2t__tau')
+newmodel.fit(method='moncar')
 
-fueltank.freeze_all()
-fueltank.thaw_solarheat_dp()
-fueltank.thaw_param(u'solarheat__pf0tank2t__ampl')
-fueltank.fit(method='moncar')
+n = n + 1
+print('{}\nStep {}\n{}'.format(stars, n, stars))
+newmodel.freeze_all()
+newmodel.thaw_param(u'solarheat__pf0tank2t__ampl')
+newmodel.thaw_solarheat_roll()
+newmodel.fit(method='moncar')
 
-fueltank.freeze_all()
-fueltank.thaw_solarheat_p()
-fueltank.thaw_solarheat_roll()
-fueltank.thaw_param(u'coupling__pftank2t__pf0tank2t__tau')
-fueltank.fit(method='moncar')
+n = n + 1
+print('{}\nStep {}\n{}'.format(stars, n, stars))
+newmodel.freeze_all()
+newmodel.thaw_param(u'heatsink__pf0tank2t__tau')
+newmodel.thaw_param(u'heatsink__pf0tank2t__T')
+newmodel.thaw_param(u'coupling__pftank2t__pf0tank2t')
+newmodel.fit(method='moncar')
 
-fueltank.write_spec_file(filename='pftank2t_model_spec_roll_2017202.json')
-fueltank.write_snapshots_file(filename='pftank2t_snapshots_2017202.json')
+n = n + 1
+print('{}\nStep {}\n{}'.format(stars, n, stars))
+newmodel.freeze_all()
+newmodel.thaw_solarheat_p()
+newmodel.thaw_param(u'coupling__pftank2t__pf0tank2t__tau')
+newmodel.fit(method='moncar')
+
+n = n + 1
+print('{}\nStep {}\n{}'.format(stars, n, stars))
+newmodel.freeze_all()
+newmodel.thaw_solarheat_dp()
+newmodel.thaw_param(u'solarheat__pf0tank2t__ampl')
+newmodel.fit(method='moncar')
+
+n = n + 1
+print('{}\nStep {}\n{}'.format(stars, n, stars))
+newmodel.freeze_all()
+newmodel.thaw_solarheat_p()
+newmodel.thaw_param(u'coupling__pftank2t__pf0tank2t__tau')
+newmodel.fit(method='moncar')
+
+n = n + 1
+print('{}\nStep {}\n{}'.format(stars, n, stars))
+newmodel.freeze_all()
+newmodel.thaw_param(u'solarheat__pf0tank2t__ampl')
+newmodel.thaw_solarheat_roll()
+newmodel.fit(method='moncar')
+
+n = n + 1
+print('{}\nStep {}\n{}'.format(stars, n, stars))
+newmodel.freeze_all()
+newmodel.thaw_param(u'heatsink__pf0tank2t__tau')
+newmodel.thaw_param(u'heatsink__pf0tank2t__T')
+newmodel.thaw_param(u'coupling__pftank2t__pf0tank2t')
+newmodel.fit(method='moncar')
+
+n = n + 1
+print('{}\nStep {}\n{}'.format(stars, n, stars))
+newmodel.freeze_all()
+newmodel.thaw_solarheat_dp()
+newmodel.thaw_param(u'solarheat__pf0tank2t__ampl')
+newmodel.fit(method='moncar')
+
+newmodel.write_spec_file()
+newmodel.write_snapshots_file()
+
