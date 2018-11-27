@@ -12,8 +12,16 @@ import xijafit
 stars = '*'*80
 n = 0
 
-newmodel = xijafit.XijaFit('oba_model_spec.json', start='2014:001', stop='2018:200',
+newmodel = xijafit.XijaFit('4rt700t_model_spec.json', start='2014:001', stop='2018:328',
     set_data_exprs=(u'oba0=30.0',), quiet=False, name='4rt700t')
+
+
+n = n + 1
+print('{}\nStep {}\n{}'.format(stars, n, stars))
+newmodel.freeze_all()
+newmodel.thaw_param(u'solarheat__oba0__ampl')
+newmodel.thaw_param(u'step_power__oba0__P')
+newmodel.fit(method='moncar')
 
 n = n + 1
 print('{}\nStep {}\n{}'.format(stars, n, stars))
@@ -28,6 +36,7 @@ print('{}\nStep {}\n{}'.format(stars, n, stars))
 newmodel.freeze_all()
 newmodel.thaw_solarheat_p()
 newmodel.thaw_param(u'coupling__4rt700t__oba0__tau')
+newmodel.thaw_param(u'step_power__oba0__P')
 newmodel.fit(method='moncar')
 
 n = n + 1
@@ -35,6 +44,7 @@ print('{}\nStep {}\n{}'.format(stars, n, stars))
 newmodel.freeze_all()
 newmodel.thaw_param(u'solarheat__oba0__ampl')
 # newmodel.thaw_solarheat_roll()
+newmodel.thaw_param(u'step_power__oba0__P')
 newmodel.fit(method='moncar')
 
 n = n + 1
@@ -57,6 +67,7 @@ print('{}\nStep {}\n{}'.format(stars, n, stars))
 newmodel.freeze_all()
 newmodel.thaw_solarheat_dp()
 newmodel.thaw_param(u'solarheat__oba0__ampl')
+newmodel.thaw_param(u'step_power__oba0__P')
 newmodel.fit(method='moncar')
 
 n = n + 1
@@ -71,6 +82,7 @@ print('{}\nStep {}\n{}'.format(stars, n, stars))
 newmodel.freeze_all()
 newmodel.thaw_param(u'solarheat__oba0__ampl')
 # newmodel.thaw_solarheat_roll()
+newmodel.thaw_param(u'step_power__oba0__P')
 newmodel.fit(method='moncar')
 
 n = n + 1
