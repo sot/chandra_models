@@ -41,11 +41,22 @@ class XijaFitPatched(xijafit.XijaFit):
 stars = '*'*80
 n = 0
 
-newmodel = XijaFitPatched('tcylaft6_model_spec.json', start='2014:001', stop='2018:150', set_data_exprs=(u'cc0=30.0',), quiet=False, name='tcylaft6')
-newmodel.zero_solarheat_dp()
+newmodel = XijaFitPatched('tcylaft6_spec_mod.json', start='2016:001', stop='2019:142', set_data_exprs=(u'cc0=30.0',), quiet=False, name='tcylaft6')
+# newmodel.zero_solarheat_dp()
 
 #-----------------------------------------------------------------------------
 # Initial Solarheat Fit
+
+
+n = n + 1
+print('{}\nStep {}\n{}'.format(stars, n, stars))
+newmodel.freeze_all()
+newmodel.thaw_param(u'heatsink__cc0__tau')
+newmodel.thaw_param(u'heatsink__cc0__T')
+newmodel.thaw_param(u'heatsink__tcylaft6__tau')
+newmodel.thaw_param(u'heatsink__tcylaft6__T')
+newmodel.thaw_param(u'coupling__tcylaft6__cc0')
+newmodel.fit(method='moncar')
 
 n = n + 1
 print('{}\nStep {}\n{}'.format(stars, n, stars))
