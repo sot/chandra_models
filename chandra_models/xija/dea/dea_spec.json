@@ -119,7 +119,7 @@
             "name": "clocking"
         },
         {
-            "class_name": "SolarHeatHrcOpts",
+            "class_name": "NewSolarHeatHrcOpts",
             "init_args": [
                 "1deamzt"
             ],
