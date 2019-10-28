@@ -1,0 +1,930 @@
+{
+    "bad_times": [
+        [
+            "2014:187:23:36:36",
+            "2014:189:00:00:00"
+        ],
+        [
+            "2014:207:07:03:55",
+            "2014:208:23:57:00"
+        ],
+        [
+            "2014:356:04:52:35",
+            "2014:356:22:57:00"
+        ],
+        [
+            "2014:357:11:36:38",
+            "2014:358:18:30:01"
+        ],
+        [
+            "2015:006:08:24:00",
+            "2015:009:03:06:08"
+        ],
+        [
+            "2015:012:00:43:26",
+            "2015:013:13:30:00"
+        ],
+        [
+            "2015:076:04:37:42",
+            "2015:078:03:11:26"
+        ],
+        [
+            "2015:264:04:35:00",
+            "2015:266:05:00:00"
+        ],
+        [
+            "2016:063:17:11:00",
+            "2016:065:04:27:00"
+        ],
+        [
+            "2016:344:07:40:00",
+            "2016:346:00:00:00"
+        ]
+    ],
+    "comps": [
+        {
+            "class_name": "Mask",
+            "init_args": [
+                "1pdeaat",
+                "gt",
+                20.0
+            ],
+            "init_kwargs": {},
+            "name": "mask__1pdeaat_gt"
+        },
+        {
+            "class_name": "Node",
+            "init_args": [
+                "1pdeaat"
+            ],
+            "init_kwargs": {
+                "quant": 2.5
+            },
+            "name": "1pdeaat"
+        },
+        {
+            "class_name": "Node",
+            "init_args": [
+                "1pin1at"
+            ],
+            "init_kwargs": {
+                "name": "pin1at",
+                "sigma": 1000.0
+            },
+            "name": "pin1at"
+        },
+        {
+            "class_name": "Pitch",
+            "init_args": [],
+            "init_kwargs": {},
+            "name": "pitch"
+        },
+        {
+            "class_name": "Eclipse",
+            "init_args": [],
+            "init_kwargs": {},
+            "name": "eclipse"
+        },
+        {
+            "class_name": "Roll",
+            "init_args": [],
+            "init_kwargs": {},
+            "name": "roll"
+        },
+        {
+            "class_name": "SimZ",
+            "init_args": [],
+            "init_kwargs": {},
+            "name": "sim_z"
+        },
+        {
+            "class_name": "DetectorHousingHeater",
+            "init_args": [],
+            "init_kwargs": {},
+            "name": "dh_heater"
+        },
+        {
+            "class_name": "Coupling",
+            "init_args": [
+                "pin1at",
+                "1pdeaat"
+            ],
+            "init_kwargs": {
+                "tau": 13.561590344337947
+            },
+            "name": "coupling__pin1at__1pdeaat"
+        },
+        {
+            "class_name": "Coupling",
+            "init_args": [
+                "1pdeaat",
+                "pin1at"
+            ],
+            "init_kwargs": {
+                "tau": 1.3444562773636255
+            },
+            "name": "coupling__1pdeaat__pin1at"
+        },
+        {
+            "class_name": "AcisPsmcSolarHeat",
+            "init_args": [
+                "pin1at",
+                "pitch",
+                "sim_z",
+                "dh_heater"
+            ],
+            "init_kwargs": {
+                "P_pitches": [
+                    45,
+                    55,
+                    65,
+                    75,
+                    85,
+                    95,
+                    130,
+                    170
+                ],
+                "P_vals": [
+                    [
+                        1.62,
+                        1.611,
+                        1.5975,
+                        1.5975,
+                        1.5975,
+                        1.5806,
+                        1.75,
+                        1.96259
+                    ],
+                    [
+                        2.029,
+                        2.029,
+                        2.029,
+                        2.029,
+                        2.029,
+                        1.4774,
+                        1.6,
+                        1.73676
+                    ],
+                    [
+                        2.8,
+                        2.7,
+                        2.55407,
+                        2.55407,
+                        2.55407,
+                        1.42066,
+                        1.45,
+                        1.476175
+                    ],
+                    [
+                        2.8,
+                        2.7,
+                        2.55407,
+                        2.55407,
+                        2.55407,
+                        1.42066,
+                        1.45,
+                        1.476175
+                    ]
+                ],
+                "epoch": "2016:322"
+            },
+            "name": "psmc_solarheat__pin1at"
+        },
+        {
+            "class_name": "SolarHeatOffNomRoll",
+            "init_args": [
+                "pin1at"
+            ],
+            "init_kwargs": {
+                "P_minus_y": 0.0,
+                "P_plus_y": 0.0,
+                "eclipse_comp": "eclipse",
+                "pitch_comp": "pitch",
+                "roll_comp": "roll"
+            },
+            "name": "solarheat_off_nom_roll__pin1at"
+        },
+        {
+            "class_name": "HeatSink",
+            "init_args": [
+                "pin1at"
+            ],
+            "init_kwargs": {
+                "T": -36.35223330470379,
+                "tau": 18.987574552683895
+            },
+            "name": "heatsink__pin1at"
+        },
+        {
+            "class_name": "CmdStatesData",
+            "init_args": [
+                "fep_count"
+            ],
+            "init_kwargs": {},
+            "name": "fep_count"
+        },
+        {
+            "class_name": "CmdStatesData",
+            "init_args": [
+                "ccd_count"
+            ],
+            "init_kwargs": {},
+            "name": "ccd_count"
+        },
+        {
+            "class_name": "CmdStatesData",
+            "init_args": [
+                "vid_board"
+            ],
+            "init_kwargs": {},
+            "name": "vid_board"
+        },
+        {
+            "class_name": "CmdStatesData",
+            "init_args": [
+                "clocking"
+            ],
+            "init_kwargs": {},
+            "name": "clocking"
+        },
+        {
+            "class_name": "AcisDpaStatePower",
+            "init_args": [
+                "1pdeaat"
+            ],
+            "init_kwargs": {
+                "ccd_count": "ccd_count",
+                "clocking": "clocking",
+                "fep_count": "fep_count",
+                "pow_states": [
+                    "0xxx",
+                    "1xxx",
+                    "2xxx",
+                    "3xx0",
+                    "3xx1",
+                    "4xxx",
+                    "55x0",
+                    "5xxx",
+                    "66x0",
+                    "6611",
+                    "6xxx"
+                ],
+                "vid_board": "vid_board"
+            },
+            "name": "dpa_power"
+        }
+    ],
+    "datestart": "2016:347:12:01:43.816",
+    "datestop": "2019:251:20:10:14.816",
+    "dt": 328.0,
+    "gui_config": {
+        "autoscale": false,
+        "filename": "/data/acismcmc/jsteiner/workspace/PSMC/June1119/js_psmc_f4_revisionupdates.json",
+        "plot_names": [
+            "1pdeaat data__time",
+            "1pdeaat resid__time",
+            "psmc_solarheat__pin1at solar_heat__pitch",
+            "1pdeaat resid__data"
+        ],
+        "set_data_vals": {},
+        "size": [
+            1868,
+            1069
+        ]
+    },
+    "mval_names": [],
+    "name": "psmc",
+    "pars": [
+        {
+            "comp_name": "mask__1pdeaat_gt",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "mask__1pdeaat_gt__val",
+            "max": 60.0,
+            "min": -10.0,
+            "name": "val",
+            "val": 12.207770726855994
+        },
+        {
+            "comp_name": "coupling__pin1at__1pdeaat",
+            "fmt": "{:.4g}",
+            "frozen": false,
+            "full_name": "coupling__pin1at__1pdeaat__tau",
+            "max": 200.0,
+            "min": 2.0,
+            "name": "tau",
+            "val": 78.95233473611847
+        },
+        {
+            "comp_name": "coupling__1pdeaat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": false,
+            "full_name": "coupling__1pdeaat__pin1at__tau",
+            "max": 200.0,
+            "min": 2.0,
+            "name": "tau",
+            "val": 14.981055340961188
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_hrcs_45",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_hrcs_45",
+            "val": 1.6887630700567768
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_hrcs_55",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_hrcs_55",
+            "val": 1.7389561153256048
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_hrcs_65",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_hrcs_65",
+            "val": 1.7868859841892384
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_hrcs_75",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_hrcs_75",
+            "val": 1.7383293767039927
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_hrcs_85",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_hrcs_85",
+            "val": 1.7460603147576528
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_hrcs_95",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_hrcs_95",
+            "val": 1.6709373407463621
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_hrcs_130",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_hrcs_130",
+            "val": 2.491760060674161
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_hrcs_170",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_hrcs_170",
+            "val": 2.9247015802058938
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_hrci_45",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_hrci_45",
+            "val": 2.6394293494598373
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_hrci_55",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_hrci_55",
+            "val": 2.232120874880761
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_hrci_65",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_hrci_65",
+            "val": 2.2555968316257564
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_hrci_75",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_hrci_75",
+            "val": 2.336316931596304
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_hrci_85",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_hrci_85",
+            "val": 1.9362898855346264
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_hrci_95",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_hrci_95",
+            "val": 1.9100240947497062
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_hrci_130",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_hrci_130",
+            "val": 2.358774165096376
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_hrci_170",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_hrci_170",
+            "val": 2.6852271856391177
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_aciss_45",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_aciss_45",
+            "val": 3.8067447089089725
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_aciss_55",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_aciss_55",
+            "val": 3.496495847490962
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_aciss_65",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_aciss_65",
+            "val": 3.227648558472614
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_aciss_75",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_aciss_75",
+            "val": 2.667808850628803
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_aciss_85",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_aciss_85",
+            "val": 2.022111777597283
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_aciss_95",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_aciss_95",
+            "val": 1.4986556103849988
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_aciss_130",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_aciss_130",
+            "val": 1.8796022602142062
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_aciss_170",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_aciss_170",
+            "val": 2.1469115121577147
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_acisi_45",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_acisi_45",
+            "val": 3.8825781537461195
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_acisi_55",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_acisi_55",
+            "val": 3.597178706845112
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_acisi_65",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_acisi_65",
+            "val": 3.233950118599217
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_acisi_75",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_acisi_75",
+            "val": 2.6852959806819476
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_acisi_85",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_acisi_85",
+            "val": 2.0784174898673062
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_acisi_95",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_acisi_95",
+            "val": 1.5217279342627537
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_acisi_130",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_acisi_130",
+            "val": 1.8245476942292282
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__P_acisi_170",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P_acisi_170",
+            "val": 2.0768004129825077
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__dP_45",
+            "max": 1.0,
+            "min": -1.0,
+            "name": "dP_45",
+            "val": 0.058248050876547636
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__dP_55",
+            "max": 1.0,
+            "min": -1.0,
+            "name": "dP_55",
+            "val": 0.07164541209007122
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__dP_65",
+            "max": 1.0,
+            "min": -1.0,
+            "name": "dP_65",
+            "val": -0.0055080178012834324
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__dP_75",
+            "max": 1.0,
+            "min": -1.0,
+            "name": "dP_75",
+            "val": -0.0005830707927299164
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__dP_85",
+            "max": 1.0,
+            "min": -1.0,
+            "name": "dP_85",
+            "val": 0.008270849875819958
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__dP_95",
+            "max": 1.0,
+            "min": -1.0,
+            "name": "dP_95",
+            "val": 0.006260245784540153
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__dP_130",
+            "max": 1.0,
+            "min": -1.0,
+            "name": "dP_130",
+            "val": 0.08331066511871962
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "psmc_solarheat__pin1at__dP_170",
+            "max": 1.0,
+            "min": -1.0,
+            "name": "dP_170",
+            "val": 0.02494469885707104
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": false,
+            "full_name": "psmc_solarheat__pin1at__tau",
+            "max": 3000.0,
+            "min": 10.0,
+            "name": "tau",
+            "val": 371.70009909257044
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": false,
+            "full_name": "psmc_solarheat__pin1at__ampl",
+            "max": 1.0,
+            "min": -1.0,
+            "name": "ampl",
+            "val": 0.05592605497261015
+        },
+        {
+            "comp_name": "psmc_solarheat__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": false,
+            "full_name": "psmc_solarheat__pin1at__dh_heater",
+            "max": 1.0,
+            "min": -1.0,
+            "name": "dh_heater",
+            "val": 0.2541544761874897
+        },
+        {
+            "comp_name": "solarheat_off_nom_roll",
+            "fmt": "{:.4g}",
+            "frozen": false,
+            "full_name": "solarheat_off_nom_roll__P_plus_y",
+            "max": 5.0,
+            "min": -5.0,
+            "name": "P_plus_y",
+            "val": 0.09339035550490314
+        },
+        {
+            "comp_name": "solarheat_off_nom_roll",
+            "fmt": "{:.4g}",
+            "frozen": false,
+            "full_name": "solarheat_off_nom_roll__P_minus_y",
+            "max": 5.0,
+            "min": -5.0,
+            "name": "P_minus_y",
+            "val": -3.4213905357541625
+        },
+        {
+            "comp_name": "heatsink__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": false,
+            "full_name": "heatsink__pin1at__T",
+            "max": 100.0,
+            "min": -100.0,
+            "name": "T",
+            "val": 15.200841438744334
+        },
+        {
+            "comp_name": "heatsink__pin1at",
+            "fmt": "{:.4g}",
+            "frozen": false,
+            "full_name": "heatsink__pin1at__tau",
+            "max": 200.0,
+            "min": 2.0,
+            "name": "tau",
+            "val": 12.794029076690162
+        },
+        {
+            "comp_name": "dpa_power",
+            "fmt": "{:.4g}",
+            "frozen": false,
+            "full_name": "dpa_power__pow_0xxx",
+            "max": 60,
+            "min": 10,
+            "name": "pow_0xxx",
+            "val": 15.10634065625198
+        },
+        {
+            "comp_name": "dpa_power",
+            "fmt": "{:.4g}",
+            "frozen": false,
+            "full_name": "dpa_power__pow_1xxx",
+            "max": 60,
+            "min": 15,
+            "name": "pow_1xxx",
+            "val": 25.449448966758993
+        },
+        {
+            "comp_name": "dpa_power",
+            "fmt": "{:.4g}",
+            "frozen": false,
+            "full_name": "dpa_power__pow_2xxx",
+            "max": 80,
+            "min": 20,
+            "name": "pow_2xxx",
+            "val": 38.26783314134563
+        },
+        {
+            "comp_name": "dpa_power",
+            "fmt": "{:.4g}",
+            "frozen": false,
+            "full_name": "dpa_power__pow_3xx0",
+            "max": 100,
+            "min": 20,
+            "name": "pow_3xx0",
+            "val": 30.631268011855035
+        },
+        {
+            "comp_name": "dpa_power",
+            "fmt": "{:.4g}",
+            "frozen": false,
+            "full_name": "dpa_power__pow_3xx1",
+            "max": 100,
+            "min": 20,
+            "name": "pow_3xx1",
+            "val": 46.027640211424625
+        },
+        {
+            "comp_name": "dpa_power",
+            "fmt": "{:.4g}",
+            "frozen": false,
+            "full_name": "dpa_power__pow_4xxx",
+            "max": 120,
+            "min": 20,
+            "name": "pow_4xxx",
+            "val": 54.99314370998819
+        },
+        {
+            "comp_name": "dpa_power",
+            "fmt": "{:.4g}",
+            "frozen": false,
+            "full_name": "dpa_power__pow_5xx0",
+            "max": 120,
+            "min": 20,
+            "name": "pow_5xx0",
+            "val": 45.93977096885578
+        },
+        {
+            "comp_name": "dpa_power",
+            "fmt": "{:.4g}",
+            "frozen": false,
+            "full_name": "dpa_power__pow_5xxx",
+            "max": 120,
+            "min": 20,
+            "name": "pow_5xxx",
+            "val": 65.78344239531796
+        },
+        {
+            "comp_name": "dpa_power",
+            "fmt": "{:.4g}",
+            "frozen": false,
+            "full_name": "dpa_power__pow_66x0",
+            "max": 140,
+            "min": 20,
+            "name": "pow_66x0",
+            "val": 51.30129187638236
+        },
+        {
+            "comp_name": "dpa_power",
+            "fmt": "{:.4g}",
+            "frozen": false,
+            "full_name": "dpa_power__pow_6611",
+            "max": 140,
+            "min": 20,
+            "name": "pow_6611",
+            "val": 80.9165234439715
+        },
+        {
+            "comp_name": "dpa_power",
+            "fmt": "{:.4g}",
+            "frozen": false,
+            "full_name": "dpa_power__pow_6xxx",
+            "max": 140,
+            "min": 20,
+            "name": "pow_6xxx",
+            "val": 84.1476358646417
+        },
+        {
+            "comp_name": "dpa_power",
+            "fmt": "{:.4g}",
+            "frozen": false,
+            "full_name": "dpa_power__mult",
+            "max": 2.0,
+            "min": 0.0,
+            "name": "mult",
+            "val": 1.955811592165519
+        },
+        {
+            "comp_name": "dpa_power",
+            "fmt": "{:.4g}",
+            "frozen": false,
+            "full_name": "dpa_power__bias",
+            "max": 100,
+            "min": 10,
+            "name": "bias",
+            "val": 99.34525908295461
+        }
+    ],
+    "tlm_code": null
+}
