@@ -314,7 +314,7 @@
                     0.0,
                     0.0
                 ],
-                "epoch": "2017:177",
+                "epoch": "2017:177:12:00:00",
                 "var_func": "linear"
             },
             "name": "solarheat__sim_px"
@@ -398,7 +398,7 @@
                     0.0
                 ],
                 "eclipse_comp": "eclipse",
-                "epoch": "2017:177",
+                "epoch": "2017:177:12:00:00",
                 "var_func": "linear"
             },
             "name": "solarheat__1cbat"
