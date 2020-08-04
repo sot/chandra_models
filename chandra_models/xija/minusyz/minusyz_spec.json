@@ -101,7 +101,7 @@
             ], 
             "init_kwargs": {
                 "ampl": 0.003851, 
-                "epoch": "2013:182", 
+                "epoch": "2013:182:12:00:00", 
                 "tau": 365, 
                 "var_func": "linear"
             }, 
@@ -174,7 +174,7 @@
             ], 
             "init_kwargs": {
                 "ampl": 0.003851, 
-                "epoch": "2013:182", 
+                "epoch": "2013:182:12:00:00", 
                 "tau": 365, 
                 "var_func": "linear"
             }, 
@@ -255,7 +255,7 @@
             ], 
             "init_kwargs": {
                 "ampl": 0.003851, 
-                "epoch": "2013:182", 
+                "epoch": "2013:182:12:00:00", 
                 "tau": 365, 
                 "var_func": "linear"
             }, 
