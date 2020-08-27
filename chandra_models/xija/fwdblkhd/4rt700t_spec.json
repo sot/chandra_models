@@ -1,5 +1,10 @@
 {
-    "bad_times": [],
+    "bad_times": [
+        [
+            "2018:283:13:00:00",
+            "2018:289:12:00:00"
+        ]
+    ],
     "comps": [
         {
             "class_name": "Node",
@@ -108,14 +113,25 @@
             ],
             "init_kwargs": {},
             "name": "step_power__oba0"
+        },
+        {
+            "class_name": "StepFunctionPower",
+            "init_args": [],
+            "init_kwargs": {
+                "P": 0.0,
+                "id": "_2",
+                "node": "oba0",
+                "time": "2020:213:04:25:12"
+            },
+            "name": "step_power_2__oba0"
         }
     ],
-    "datestart": "2016:262:00:01:27.816",
-    "datestop": "2019:365:23:52:54.816",
+    "datestart": "2017:033:00:02:30.816",
+    "datestop": "2020:237:23:51:26.816",
     "dt": 328.0,
     "evolve_method": 2,
     "gui_config": {
-        "filename": "/Users/mdahmer/WIP/xija_model_updates/4rt700t/chandra_models/chandra_models/xija/fwdblkhd/4rt700t_model_spec.json",
+        "filename": "/Users/mdahmer/WIP/xija_model_updates/4rt700t/chandra_models/chandra_models/xija/fwdblkhd/4rt700t_spec.json",
         "plot_names": [
             "4rt700t data__time",
             "4rt700t resid__time",
@@ -457,12 +473,12 @@
         {
             "comp_name": "solarheat__oba0",
             "fmt": "{:.4g}",
-            "frozen": true,
+            "frozen": false,
             "full_name": "solarheat__oba0__bias",
             "max": 2.0,
             "min": -1.0,
             "name": "bias",
-            "val": 0.0
+            "val": -0.014062499999999999
         },
         {
             "comp_name": "coupling__4rt700t__oba0",
@@ -482,7 +498,17 @@
             "max": 10.0,
             "min": -10.0,
             "name": "P",
-            "val": 0.277719105093929
+            "val": 0.3152
+        },
+        {
+            "comp_name": "step_power_2__oba0",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "step_power_2__oba0__P",
+            "max": 10.0,
+            "min": -10.0,
+            "name": "P",
+            "val": -0.31520000000000004
         }
     ],
     "rk4": 0,
