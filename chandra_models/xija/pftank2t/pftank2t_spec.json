@@ -1,4 +1,5 @@
 {
+    "bad_times": [],
     "comps": [
         {
             "class_name": "Node",
@@ -123,31 +124,48 @@
             "name": "solarheat_off_nom_roll__pf0tank2t"
         }
     ],
-    "datestart": "2014:150:12:09:12.816",
-    "datestop": "2018:150:11:48:30.816",
+    "datestart": "2017:095:00:04:06.816",
+    "datestop": "2020:199:23:50:06.816",
     "dt": 328.0,
+    "evolve_method": 1,
+    "gui_config": {
+        "filename": "/Users/mdahmer/WIP/xija_model_updates/pftank2t/chandra_models/chandra_models/xija/pftank2t/pftank2t_spec.json",
+        "plot_names": [
+            "pftank2t data__time",
+            "pftank2t resid__time",
+            "solarheat__pf0tank2t solar_heat__pitch"
+        ],
+        "set_data_vals": {
+            "pf0tank2t": 28
+        },
+        "size": [
+            1780,
+            1181
+        ]
+    },
+    "limits": {},
     "mval_names": [],
     "name": "pftank2t",
     "pars": [
         {
             "comp_name": "heatsink__pf0tank2t",
             "fmt": "{:.4g}",
-            "frozen": true,
+            "frozen": false,
             "full_name": "heatsink__pf0tank2t__T",
             "max": 100.0,
             "min": -300.0,
             "name": "T",
-            "val": 8.575608673512326
+            "val": 8.805145782615739
         },
         {
             "comp_name": "heatsink__pf0tank2t",
             "fmt": "{:.4g}",
-            "frozen": true,
+            "frozen": false,
             "full_name": "heatsink__pf0tank2t__tau",
             "max": 800.0,
             "min": 2.0,
             "name": "tau",
-            "val": 208.82797912337148
+            "val": 208.92955058707142
         },
         {
             "comp_name": "prop_heat__pf0tank2t",
@@ -172,102 +190,102 @@
         {
             "comp_name": "solarheat__pf0tank2t",
             "fmt": "{:.4g}",
-            "frozen": true,
+            "frozen": false,
             "full_name": "solarheat__pf0tank2t__P_45",
             "max": 1.0,
             "min": -1.0,
             "name": "P_45",
-            "val": 0.2068967063756976
+            "val": 0.20978278687242763
         },
         {
             "comp_name": "solarheat__pf0tank2t",
             "fmt": "{:.4g}",
-            "frozen": true,
+            "frozen": false,
             "full_name": "solarheat__pf0tank2t__P_60",
             "max": 1.0,
             "min": -1.0,
             "name": "P_60",
-            "val": 0.2139244797517381
+            "val": 0.22655157442903545
         },
         {
             "comp_name": "solarheat__pf0tank2t",
             "fmt": "{:.4g}",
-            "frozen": true,
+            "frozen": false,
             "full_name": "solarheat__pf0tank2t__P_80",
             "max": 1.0,
             "min": -1.0,
             "name": "P_80",
-            "val": 0.1889964479800537
+            "val": 0.1900197880038446
         },
         {
             "comp_name": "solarheat__pf0tank2t",
             "fmt": "{:.4g}",
-            "frozen": true,
+            "frozen": false,
             "full_name": "solarheat__pf0tank2t__P_100",
             "max": 1.0,
             "min": -1.0,
             "name": "P_100",
-            "val": 0.1372975781199931
+            "val": 0.14693275178098675
         },
         {
             "comp_name": "solarheat__pf0tank2t",
             "fmt": "{:.4g}",
-            "frozen": true,
+            "frozen": false,
             "full_name": "solarheat__pf0tank2t__P_120",
             "max": 1.0,
             "min": -1.0,
             "name": "P_120",
-            "val": 0.105
+            "val": 0.09957758859638445
         },
         {
             "comp_name": "solarheat__pf0tank2t",
             "fmt": "{:.4g}",
-            "frozen": true,
+            "frozen": false,
             "full_name": "solarheat__pf0tank2t__P_130",
             "max": 1.0,
             "min": -1.0,
             "name": "P_130",
-            "val": 0.0900542858655144
+            "val": 0.0671564396486922
         },
         {
             "comp_name": "solarheat__pf0tank2t",
             "fmt": "{:.4g}",
-            "frozen": true,
+            "frozen": false,
             "full_name": "solarheat__pf0tank2t__P_140",
             "max": 1.0,
             "min": -1.0,
             "name": "P_140",
-            "val": 0.05
+            "val": 0.05301227657453827
         },
         {
             "comp_name": "solarheat__pf0tank2t",
             "fmt": "{:.4g}",
-            "frozen": true,
+            "frozen": false,
             "full_name": "solarheat__pf0tank2t__P_150",
             "max": 1.0,
             "min": -1.0,
             "name": "P_150",
-            "val": 0.005209567154263458
+            "val": 0.007593153078081943
         },
         {
             "comp_name": "solarheat__pf0tank2t",
             "fmt": "{:.4g}",
-            "frozen": true,
+            "frozen": false,
             "full_name": "solarheat__pf0tank2t__P_160",
             "max": 1.0,
             "min": -1.0,
             "name": "P_160",
-            "val": -0.038
+            "val": -0.02006813299901447
         },
         {
             "comp_name": "solarheat__pf0tank2t",
             "fmt": "{:.4g}",
-            "frozen": true,
+            "frozen": false,
             "full_name": "solarheat__pf0tank2t__P_170",
             "max": 1.0,
             "min": -1.0,
             "name": "P_170",
-            "val": -0.1
+            "val": -0.11197657747165442
         },
         {
             "comp_name": "solarheat__pf0tank2t",
@@ -277,7 +295,7 @@
             "max": 1.0,
             "min": -1.0,
             "name": "dP_45",
-            "val": 0.01460314201627873
+            "val": 0.003672854859621805
         },
         {
             "comp_name": "solarheat__pf0tank2t",
@@ -287,7 +305,7 @@
             "max": 1.0,
             "min": -1.0,
             "name": "dP_60",
-            "val": 0.014
+            "val": 0.0020398914995189915
         },
         {
             "comp_name": "solarheat__pf0tank2t",
@@ -297,7 +315,7 @@
             "max": 1.0,
             "min": -1.0,
             "name": "dP_80",
-            "val": 0.013001577387206552
+            "val": 0.01283642966767003
         },
         {
             "comp_name": "solarheat__pf0tank2t",
@@ -307,7 +325,7 @@
             "max": 1.0,
             "min": -1.0,
             "name": "dP_100",
-            "val": 0.010943630538112231
+            "val": 0.008407066007483043
         },
         {
             "comp_name": "solarheat__pf0tank2t",
@@ -317,7 +335,7 @@
             "max": 1.0,
             "min": -1.0,
             "name": "dP_120",
-            "val": 0.014
+            "val": 0.020924337341681996
         },
         {
             "comp_name": "solarheat__pf0tank2t",
@@ -327,7 +345,7 @@
             "max": 1.0,
             "min": -1.0,
             "name": "dP_130",
-            "val": 0.0157726256194432
+            "val": 0.02700761802595652
         },
         {
             "comp_name": "solarheat__pf0tank2t",
@@ -337,7 +355,7 @@
             "max": 1.0,
             "min": -1.0,
             "name": "dP_140",
-            "val": 0.015
+            "val": 0.013012828211478053
         },
         {
             "comp_name": "solarheat__pf0tank2t",
@@ -347,7 +365,7 @@
             "max": 1.0,
             "min": -1.0,
             "name": "dP_150",
-            "val": 0.01568988351517002
+            "val": 0.013492487524387092
         },
         {
             "comp_name": "solarheat__pf0tank2t",
@@ -357,7 +375,7 @@
             "max": 1.0,
             "min": -1.0,
             "name": "dP_160",
-            "val": 0.015
+            "val": 0.007791461395653523
         },
         {
             "comp_name": "solarheat__pf0tank2t",
@@ -367,7 +385,7 @@
             "max": 1.0,
             "min": -1.0,
             "name": "dP_170",
-            "val": 0.015
+            "val": 0.020910725827933935
         },
         {
             "comp_name": "solarheat__pf0tank2t",
@@ -387,7 +405,7 @@
             "max": 1.0,
             "min": -1.0,
             "name": "ampl",
-            "val": 0.00968256506377037
+            "val": 0.010811898947666198
         },
         {
             "comp_name": "solarheat__pf0tank2t",
@@ -412,23 +430,24 @@
         {
             "comp_name": "solarheat_off_nom_roll__pf0tank2t",
             "fmt": "{:.4g}",
-            "frozen": true,
+            "frozen": false,
             "full_name": "solarheat_off_nom_roll__pf0tank2t__P_plus_y",
             "max": 3.0,
             "min": -3.0,
             "name": "P_plus_y",
-            "val": -0.067505031507498
+            "val": -0.009785204371949512
         },
         {
             "comp_name": "solarheat_off_nom_roll__pf0tank2t",
             "fmt": "{:.4g}",
-            "frozen": true,
+            "frozen": false,
             "full_name": "solarheat_off_nom_roll__pf0tank2t__P_minus_y",
             "max": 3.0,
             "min": -3.0,
             "name": "P_minus_y",
-            "val": -0.058252789515748346
+            "val": -0.09559996799874004
         }
     ],
+    "rk4": 0,
     "tlm_code": null
 }
