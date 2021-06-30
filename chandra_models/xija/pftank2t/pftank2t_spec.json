@@ -145,7 +145,17 @@
             1110
         ]
     },
-    "limits": {},
+    "limits": {
+        "pftank2t": {
+            "odb.caution.high": 120,
+            "odb.caution.high.matlab_identifier": "yellow_limit",
+            "odb.warning.high": 140,
+            "odb.warning.high.matlab_identifier": "red_limit",
+            "planning.warning.high": 110,
+            "planning.warning.high.matlab_identifier": "reference_limit",
+            "unit": "degF"
+        }
+    },
     "mval_names": [],
     "name": "pftank2t",
     "pars": [

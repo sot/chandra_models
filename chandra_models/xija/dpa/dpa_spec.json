@@ -262,8 +262,14 @@
     "limits": {
         "1dpamzt": {
             "odb.caution.high": 39.5,
+            "odb.caution.high.matlab_identifier": "yellow_limit",
             "odb.warning.high": 41.5,
-            "planning.warning.high": 37.5
+            "odb.warning.high.matlab_identifier": "red_limit",
+            "planning.warning.high": 37.5,
+            "planning.warning.high.matlab_identifier": "reference_limit",
+            "planning.caution.low": 12.0,
+            "planning.caution.low.matlab_identifier": "low_limit",
+            "unit": "degC"
         }
     },
     "mval_names": [],

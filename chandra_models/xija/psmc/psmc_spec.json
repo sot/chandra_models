@@ -297,6 +297,17 @@
             1246
         ]
     },
+    "limits": {
+        "1pdeaat": {
+            "odb.caution.high": 57,
+            "odb.caution.high.matlab_identifier": "yellow_limit",
+            "odb.warning.high": 62,
+            "odb.warning.high.matlab_identifier": "red_limit",
+            "planning.warning.high": 52.5,
+            "planning.warning.high.matlab_identifier": "reference_limit",
+            "unit": "degC"
+        }
+    },
     "mval_names": [],
     "name": "psmc",
     "pars": [

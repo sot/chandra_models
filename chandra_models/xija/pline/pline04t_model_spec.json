@@ -196,6 +196,15 @@
     "datestop": "2020:001:11:54:30.816",
     "dt": 328.0,
     "evolve_method": 2,
+    "limits": {
+        "pline04t": {
+            "planning.warning.high": 170,
+            "planning.warning.high.matlab_identifier": "yellow_limit",
+            "planning.warning.low": 50,
+            "planning.warning.low.matlab_identifier": "reference_limit",
+            "unit": "degF"
+        }
+    },
     "mval_names": [],
     "name": "pline04t",
     "pars": [

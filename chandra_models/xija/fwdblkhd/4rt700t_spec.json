@@ -181,7 +181,17 @@
             712
         ]
     },
-    "limits": {},
+    "limits": {
+        "4rt700t": {
+            "odb.caution.high": 110,
+            "odb.caution.high.matlab_identifier": "yellow_limit",
+            "odb.warning.high": 120,
+            "odb.warning.high.matlab_identifier": "red_limit",
+            "planning.warning.high": 100,
+            "planning.warning.high.matlab_identifier": "reference_limit",
+            "unit": "degF"
+        }
+    },
     "mval_names": [],
     "name": "4rt700t",
     "pars": [

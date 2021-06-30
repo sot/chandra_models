@@ -207,6 +207,15 @@
     "datestop": "2019:365:23:52:54.816",
     "dt": 328.0,
     "evolve_method": 2,
+    "limits": {
+        "pm2thv1t": {
+            "planning.warning.high": 210,
+            "planning.warning.high.matlab_identifier": "yellow_limit",
+            "odb.warning.high": 240,
+            "odb.warning.high.identifier": "red_limit",
+            "unit": "degF"
+        }
+    },
     "mval_names": [],
     "name": "pm2thv1t",
     "pars": [
