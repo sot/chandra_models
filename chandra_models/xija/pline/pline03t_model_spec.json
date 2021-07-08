@@ -158,7 +158,7 @@
     "evolve_method": 2,
     "limits": {
         "pline03t": {
-            "planning.warning.high": 200,
+            "odb.caution.high": 200,
             "planning.warning.low": 50,
             "unit": "degF"
         }
