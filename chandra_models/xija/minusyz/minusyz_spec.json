@@ -317,7 +317,6 @@
     "limits": {
         "tcylaft6": {
             "planning.warning.high": 130,
-            "planning.warning.high.matlab_identifier": "yellow_limit",
             "unit": "degF"
         }
     },

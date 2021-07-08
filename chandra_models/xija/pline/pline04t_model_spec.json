@@ -199,9 +199,7 @@
     "limits": {
         "pline04t": {
             "planning.warning.high": 170,
-            "planning.warning.high.matlab_identifier": "yellow_limit",
             "planning.warning.low": 50,
-            "planning.warning.low.matlab_identifier": "reference_limit",
             "unit": "degF"
         }
     },

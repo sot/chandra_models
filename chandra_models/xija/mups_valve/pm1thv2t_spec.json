@@ -128,9 +128,7 @@
     "limits": {
         "pm1thv2t": {
             "planning.warning.high": 210,
-            "planning.warning.high.matlab_identifier": "yellow_limit",
             "odb.warning.high": 240,
-            "odb.warning.high.identifier": "red_limit",
             "unit": "degF"
         }
     },

@@ -237,9 +237,7 @@
     "limits": {
         "aacccdpt": {
             "planning.warning.high": -5.8,
-            "planning.warning.high.matlab_identifier": "reference_limit",
             "planning.penalty.high": -6.8,
-            "planning.penalty.high.matlab_identifier": "penalty_limit",
             "unit": "degC"
         }
     },
