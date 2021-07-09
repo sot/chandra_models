@@ -187,6 +187,12 @@
     "datestart": "2016:001:12:04:15.816",
     "datestop": "2019:142:11:53:50.816",
     "dt": 328.0,
+    "limits": {
+        "tcylaft6": {
+            "planning.warning.high": 130,
+            "unit": "degF"
+        }
+    },
     "mval_names": [],
     "name": "tcylaft6",
     "pars": [

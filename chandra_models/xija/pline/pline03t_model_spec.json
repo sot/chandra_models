@@ -156,6 +156,13 @@
     "datestop": "2020:001:11:54:30.816",
     "dt": 328.0,
     "evolve_method": 2,
+    "limits": {
+        "pline03t": {
+            "odb.caution.high": 200,
+            "planning.warning.low": 50,
+            "unit": "degF"
+        }
+    },
     "mval_names": [],
     "name": "pline03t",
     "pars": [

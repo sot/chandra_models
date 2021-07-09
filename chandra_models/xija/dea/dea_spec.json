@@ -253,7 +253,14 @@
             799
         ]
     },
-    "limits": {},
+    "limits": {
+        "1deamzt": {
+            "odb.caution.high": 39.5,
+            "odb.warning.high": 42.5,
+            "planning.warning.high": 37.5,
+            "unit": "degC"
+        }
+    },
     "mval_names": [],
     "name": "1deamzt",
     "pars": [

@@ -441,6 +441,17 @@
             794
         ]
     },
+    "limits": {
+        "fptemp": {
+            "planning.data_quality.high.acisi": -112.0,
+            "planning.data_quality.high.aciss": -111.0,
+            "planning.data_quality.high.aciss_hot": -109.0,
+            "planning.data_quality.high.cold_ecs": -118.2,
+            "planning.warning.high": -84.0,
+            "safety.caution.high": -80.0,
+            "unit": "degC"
+        }
+    },
     "mval_names": [],
     "name": "acisfp",
     "pars": [

@@ -181,7 +181,14 @@
             712
         ]
     },
-    "limits": {},
+    "limits": {
+        "4rt700t": {
+            "odb.caution.high": 110,
+            "odb.warning.high": 140,
+            "planning.warning.high": 103,
+            "unit": "degF"
+        }
+    },
     "mval_names": [],
     "name": "4rt700t",
     "pars": [

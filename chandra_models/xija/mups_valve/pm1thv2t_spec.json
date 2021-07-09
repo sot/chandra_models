@@ -125,6 +125,13 @@
     "datestop": "2019:181:23:54:30.816",
     "dt": 328.0,
     "evolve_method": 1,
+    "limits": {
+        "pm1thv2t": {
+            "planning.warning.high": 210,
+            "odb.warning.high": 240,
+            "unit": "degF"
+        }
+    },
     "mval_names": [],
     "name": "pm1thv2t",
     "pars": [

@@ -297,6 +297,14 @@
             1246
         ]
     },
+    "limits": {
+        "1pdeaat": {
+            "odb.caution.high": 57,
+            "odb.warning.high": 62,
+            "planning.warning.high": 52.5,
+            "unit": "degC"
+        }
+    },
     "mval_names": [],
     "name": "psmc",
     "pars": [

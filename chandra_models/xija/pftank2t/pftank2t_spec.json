@@ -145,7 +145,14 @@
             1110
         ]
     },
-    "limits": {},
+    "limits": {
+        "pftank2t": {
+            "odb.caution.high": 120,
+            "odb.warning.high": 140,
+            "planning.warning.high": 115,
+            "unit": "degF"
+        }
+    },
     "mval_names": [],
     "name": "pftank2t",
     "pars": [

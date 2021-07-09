@@ -237,7 +237,8 @@
     "limits": {
         "aacccdpt": {
             "planning.warning.high": -5.8,
-            "planning.penalty.high": -6.8
+            "planning.penalty.high": -6.8,
+            "unit": "degC"
         }
     },
     "mval_names": [],
