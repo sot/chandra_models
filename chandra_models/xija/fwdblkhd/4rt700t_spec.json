@@ -184,7 +184,7 @@
     "limits": {
         "4rt700t": {
             "odb.caution.high": 110,
-            "odb.warning.high": 120,
+            "odb.warning.high": 140,
             "planning.warning.high": 103,
             "unit": "degF"
         }
