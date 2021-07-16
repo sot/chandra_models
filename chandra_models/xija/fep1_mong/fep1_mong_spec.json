@@ -250,7 +250,15 @@
             799
         ]
     },
-    "limits": {},
+    "limits": {
+        "tmp_fep1_mong": {
+            "planning.warning.high": 47.0,
+            "safety.caution.high": 49.0,
+            "planning.warning.low": 2.0,
+            "safety.caution.low": 0.0,
+            "unit": "degC"
+        }
+    },
     "mval_names": [],
     "name": "tmp_fep1_mong",
     "pars": [

@@ -250,9 +250,17 @@
             801
         ]
     },
-    "limits": {},
+    "limits": {
+        "tmp_bep_pcb": {
+            "planning.warning.high": 42.0,
+            "safety.caution.high": 44.0,
+            "planning.warning.low": 8.5,
+            "safety.caution.low": 6.5,
+            "unit": "degC"
+        }
+    },
     "mval_names": [],
-    "name": "bep_pcb",
+    "name": "tmp_bep_pcb",
     "pars": [
         {
             "comp_name": "mask__tmp_bep_pcb_gt",

@@ -251,9 +251,17 @@
             802
         ]
     },
-    "limits": {},
+    "limits": {
+        "tmp_fep1_actel": {
+            "planning.warning.high": 46.0,
+            "safety.caution.high": 48.0,
+            "planning.warning.low": 2.0,
+            "safety.caution.low": 0.0,
+            "unit": "degC"
+        }
+    },
     "mval_names": [],
-    "name": "fep1_actel",
+    "name": "tmp_fep1_actel",
     "pars": [
         {
             "comp_name": "mask__tmp_fep1_actel_gt",
