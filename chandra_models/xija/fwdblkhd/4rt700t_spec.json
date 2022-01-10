@@ -186,6 +186,7 @@
             "odb.caution.high": 110,
             "odb.warning.high": 140,
             "planning.warning.high": 103,
+            "planning.warning.high.letg": 102,
             "unit": "degF"
         }
     },
