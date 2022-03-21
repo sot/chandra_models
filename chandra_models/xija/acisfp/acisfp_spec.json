@@ -160,12 +160,6 @@
             "name": "dpa_power"
         },
         {
-            "class_name": "TelemFormat",
-            "init_args": [],
-            "init_kwargs": {},
-            "name": "ccsdstmf"
-        },
-        {
             "class_name": "TelemData",
             "init_args": [
                 "aoattqt1"
