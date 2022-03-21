@@ -665,7 +665,7 @@
             "max": 20.0,
             "min": 0.0,
             "name": "k",
-            "val": 13.407428279308089
+            "val": 0.0
         },
         {
             "comp_name": "earthheat__fptemp",
@@ -675,7 +675,7 @@
             "max": 20.0,
             "min": 0.0,
             "name": "k2",
-            "val": 0.0
+            "val": 13.407428279308089
         },
         {
             "comp_name": "thermostat_heat__fptemp",
