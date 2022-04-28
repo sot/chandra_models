@@ -215,15 +215,15 @@
             "name": "step_power_5__aca0"
         },
         {
-            "class_name": "StepFunctionPower",
+            "class_name": "MsidStatePower",
             "init_args": [],
             "init_kwargs": {
-                "P": -0.5,
-                "id": "_6",
+                "P": 0.5,
                 "node": "aca0",
-                "time": "2022:040:17:31:50"
+                "state_msid": "3AZF6HTA",
+                "state_val": "ENAB"
             },
-            "name": "step_power_6__aca0"
+            "name": "3azf6hta_enab"
         }
     ],
     "datestart": "2018:001:00:02:06.816",
@@ -601,10 +601,10 @@
             "val": -0.06
         },
         {
-            "comp_name": "step_power_6__aca0",
+            "comp_name": "fa6_enab__aca0",
             "fmt": "{:.4g}",
             "frozen": false,
-            "full_name": "step_power_6__aca0__P",
+            "full_name": "fa6_enab__aca0__P",
             "max": 5.0,
             "min": -5.0,
             "name": "P",
