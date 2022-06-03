@@ -265,9 +265,9 @@
     },
     "limits": {
         "1deamzt": {
-            "odb.caution.high": 39.5,
+            "odb.caution.high": 40.5,
             "odb.warning.high": 42.5,
-            "planning.warning.high": 37.5,
+            "planning.warning.high": 38.5,
             "unit": "degC"
         }
     },
