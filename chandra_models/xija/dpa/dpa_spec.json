@@ -242,10 +242,6 @@
     "evolve_method": 1,
     "gui_config": {
         "filename": "/home/gregg/THERMAL-MODELS/RECAL/2021_MAR_DPA_RECAL/RESTART_STEP_2_2xx0_35.json",
-        "limits": {
-            "odb.caution.high": 40.5,
-            "planning.warning.high": 38.5
-        },
         "msid": "1dpamzt",
         "plot_names": [
             "1dpamzt data__time",
