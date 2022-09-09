@@ -81800,7 +81800,13 @@
     "datestop": "2021:365:23:52:22.816",
     "dt": 328.0,
     "evolve_method": 2,
-    "limits": {},
+    "limits": {
+        "pm2thv1t": {
+            "odb.warning.high": 240,
+            "planning.warning.high": 210,
+            "unit": "degF"
+        }
+    },
     "mval_names": [],
     "name": "pm2thv1t",
     "pars": [
