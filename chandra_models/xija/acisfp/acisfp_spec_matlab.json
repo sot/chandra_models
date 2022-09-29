@@ -279,7 +279,7 @@
                 "solarephem0_x": "solarephem0_x",
                 "solarephem0_y": "solarephem0_y",
                 "solarephem0_z": "solarephem0_z",
-	        "k2": 1.0
+                "k2": 1.0
             },
             "name": "earthheat__fptemp"
         },
