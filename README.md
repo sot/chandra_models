@@ -1,4 +1,4 @@
-This repository serves as the official source for flight approved thermal model
+This repository serves as the official source for flight approved Chandra model
 definition files.
 
 For maintenance of the flight `chandra_models` repository on HEAD see:
