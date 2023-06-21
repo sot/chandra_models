@@ -561,7 +561,7 @@
     ],
     "datestart": "2022:130:00:00:38.816",
     "datestop": "2023:129:23:56:02.816",
-    "dt": 164.0,
+    "dt": 328.0,
     "evolve_method": 2,
     "gui_config": {
         "filename": "/Users/jzuhone/Source/chandra_models/chandra_models/xija/acisfp/acisfp_spec.json",
