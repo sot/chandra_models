@@ -579,6 +579,7 @@
             "planning.data_quality.high.acisi": -112.0,
             "planning.data_quality.high.aciss": -111.0,
             "planning.data_quality.high.aciss_hot": -109.0,
+            "planning.data_quality.high.aciss_hot_b": -105.0,
             "planning.data_quality.high.cold_ecs": -118.2,
             "planning.warning.high": -86.0,
             "safety.caution.high": -80.0,
