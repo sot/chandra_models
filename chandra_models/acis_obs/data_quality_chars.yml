@@ -1,0 +1,6 @@
+spectral_max_count: # the maximum number of counts for hot ACIS observations
+  - acis_i: 1000.0
+  - acis_s: 2000.0
+num_counts: 300 # fallback criterion for the number of expected counts
+hetg_simz: -6.0 # the SIM-Z in mm less than which we can go to very hot temperatures
+
