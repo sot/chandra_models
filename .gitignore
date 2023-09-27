@@ -2,3 +2,5 @@ chandra_models.egg-info
 build
 *.pyc
 dist
+.idea
+.vscode
