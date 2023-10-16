@@ -273,7 +273,7 @@
     },
     "limits": {
         "aacccdpt": {
-            "planning.penalty.high": -5.5,
+            "planning.penalty.high": -4.0,
             "planning.warning.high": -4.5,
             "unit": "degC"
         }

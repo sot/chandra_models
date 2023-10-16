@@ -324,7 +324,7 @@
     "limits": {
         "2ceahvpt": {
             "odb.caution.high": 12,
-            "planning.warning.high": 10,
+            "planning.warning.high": 9.5,
             "unit": "degC"
         }
     },
