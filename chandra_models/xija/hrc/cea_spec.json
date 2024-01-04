@@ -311,21 +311,21 @@
     "dt": 328.0,
     "evolve_method": 1,
     "gui_config": {
-         "filename": "/Users/matthewdahmer/WIP/hrc/chandra_models/chandra_models/xija/hrc/cea_spec.json",
-         "plot_names": [
-             "2ceahvpt data__time",
-             "2ceahvpt resid__time"
-         ],
-         "set_data_vals": {
-             "cea0": 7,
-             "cea1": 7
-         },
-         "size": [
-             2702,
-             1329
-         ]
-     },
-     "limits": {
+        "filename": "/Users/matthewdahmer/WIP/hrc/chandra_models/chandra_models/xija/hrc/cea_spec.json",
+        "plot_names": [
+            "2ceahvpt data__time",
+            "2ceahvpt resid__time"
+        ],
+        "set_data_vals": {
+            "cea0": 7,
+            "cea1": 7
+        },
+        "size": [
+            2702,
+            1329
+        ]
+    },
+    "limits": {
         "2ceahvpt": {
             "odb.caution.high": 12,
             "planning.warning.high": 9.5,
