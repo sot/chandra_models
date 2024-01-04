@@ -310,7 +310,22 @@
     "datestop": "2023:344:23:52:30.816",
     "dt": 328.0,
     "evolve_method": 1,
-    "limits": {
+    "gui_config": {
+         "filename": "/Users/matthewdahmer/WIP/hrc/chandra_models/chandra_models/xija/hrc/cea_spec.json",
+         "plot_names": [
+             "2ceahvpt data__time",
+             "2ceahvpt resid__time"
+         ],
+         "set_data_vals": {
+             "cea0": 7,
+             "cea1": 7
+         },
+         "size": [
+             2702,
+             1329
+         ]
+     },
+     "limits": {
         "2ceahvpt": {
             "odb.caution.high": 12,
             "planning.warning.high": 9.5,
@@ -318,7 +333,7 @@
         }
     },
     "mval_names": [],
-    "name": "2ceahvpt",
+    "name": "2ceahvpt_ab",
     "pars": [
         {
             "comp_name": "mask__2ceahvpt_gt",
