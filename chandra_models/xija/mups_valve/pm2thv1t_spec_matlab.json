@@ -81803,7 +81803,7 @@
     "limits": {
         "pm2thv1t": {
             "odb.warning.high": 240,
-            "planning.warning.high": 210,
+            "planning.warning.high": 215,
             "unit": "degF"
         }
     },
