@@ -241,7 +241,7 @@
     "dt": 328.0,
     "evolve_method": 1,
     "gui_config": {
-        "filename": "/home/gregg/THERMAL-MODELS/1DPAMYT/JSON-FILES/dpamyt_HFit_5d2.json",
+        "filename": "dpamyt_spec.json",
         "msid": "1dpamyt",
         "plot_names": [
             "1dpamyt data__time",
