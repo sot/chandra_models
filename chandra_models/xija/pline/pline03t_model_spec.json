@@ -234,7 +234,8 @@
     },
     "limits": {
         "pline03t": {
-            "odb.caution.high": 170,
+            "odb.caution.high": 200,
+            "odb.caution.low": 42.5,
             "planning.warning.low": 50,
             "unit": "degF"
         }
