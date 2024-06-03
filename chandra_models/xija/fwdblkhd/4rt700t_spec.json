@@ -194,11 +194,11 @@
     },
     "limits": {
         "4rt700t": {
-            "odb.caution.high": 110,
+            "odb.caution.high": 115,
             "odb.warning.high": 140,
-            "planning.warning.high": 106,
-            "planning.warning.low": 73,
-            "planning.warning.low.hetg": 73,
+            "planning.warning.high": 109,
+            "planning.warning.low": 77,
+            "planning.warning.low.hetg": 77,
             "planning.warning.low.letg": 77,
             "unit": "degF"
         }
