@@ -210,7 +210,7 @@
     "limits": {
         "pm1thv2t": {
             "odb.warning.high": 240,
-            "planning.warning.high": 215,
+            "planning.warning.high": 220,
             "unit": "degF"
         }
     },
