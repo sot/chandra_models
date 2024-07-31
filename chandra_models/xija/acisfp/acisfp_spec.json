@@ -617,7 +617,7 @@
     "dt": 328.0,
     "evolve_method": 2,
     "gui_config": {
-        "filename": "/Users/jzuhone/Source/chandra_models/chandra_models/xija/acisfp/acisfp_spec_good.json",
+        "filename": "/Users/jzuhone/Source/chandra_models/chandra_models/xija/acisfp/acisfp_spec.json",
         "plot_names": [
             "hrc_acis_is_simz_solarheat__1cbat solar_heat__pitch",
             "fptemp data__time"
@@ -781,22 +781,22 @@
         {
             "comp_name": "earthheat__fptemp",
             "fmt": "{:.4g}",
-            "frozen": true,
+            "frozen": false,
             "full_name": "earthheat__fptemp__k",
             "max": 20.0,
             "min": 0.0,
             "name": "k",
-            "val": 5.62629230691764
+            "val": 5.854807931917639
         },
         {
             "comp_name": "earthheat__fptemp",
             "fmt": "{:.4g}",
-            "frozen": true,
+            "frozen": false,
             "full_name": "earthheat__fptemp__k2",
             "max": 20.0,
             "min": 0.0,
             "name": "k2",
-            "val": 6.4782886173246546
+            "val": 6.209929242324654
         },
         {
             "comp_name": "thermostat_heat__fptemp",
