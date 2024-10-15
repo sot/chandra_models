@@ -147,9 +147,9 @@
     },
     "limits": {
         "pftank2t": {
-            "odb.caution.high": 125,
+            "odb.caution.high": 130,
             "odb.warning.high": 140,
-            "planning.warning.high": 120,
+            "planning.warning.high": 125,
             "unit": "degF"
         }
     },
