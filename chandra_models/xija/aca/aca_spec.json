@@ -258,6 +258,17 @@
                 "time": "2022:320:00:00:00"
             },
             "name": "step_power_8__aca0"
+        },
+        {
+            "class_name": "StepFunctionPower",
+            "init_args": [],
+            "init_kwargs": {
+                "P": 0.5,
+                "id": "_9",
+                "node": "aca0",
+                "time": "2024:247:00:00:00"
+            },
+            "name": "step_power_9__aca0"
         }
     ],
     "datestart": "2023:170:00:01:02.816",
@@ -281,7 +292,7 @@
     },
     "limits": {
         "aacccdpt": {
-            "planning.warning.high": -3.9,
+            "planning.warning.high": -2.7,
             "unit": "degC"
         }
     },
@@ -673,6 +684,16 @@
             "fmt": "{:.4g}",
             "frozen": true,
             "full_name": "step_power_8__aca0__P",
+            "max": 5.0,
+            "min": -5.0,
+            "name": "P",
+            "val": 0.021595123445427206
+        },
+        {
+            "comp_name": "step_power_9__aca0",
+            "fmt": "{:.4g}",
+            "frozen": true,
+            "full_name": "step_power_9__aca0__P",
             "max": 5.0,
             "min": -5.0,
             "name": "P",
