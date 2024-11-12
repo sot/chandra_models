@@ -292,7 +292,7 @@
     },
     "limits": {
         "aacccdpt": {
-            "planning.warning.high": -3.9,
+            "planning.warning.high": -2.7,
             "unit": "degC"
         }
     },
