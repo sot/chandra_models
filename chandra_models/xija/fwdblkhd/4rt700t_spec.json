@@ -194,6 +194,8 @@
             "planning.warning.low": 77,
             "planning.warning.low.hetg": 77,
             "planning.warning.low.letg": 77,
+            "planning.warning.high.hetg": 112,
+            "planning.warning.high.letg": 112,
             "unit": "degF"
         }
     },
