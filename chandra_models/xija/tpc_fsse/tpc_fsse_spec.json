@@ -153,7 +153,9 @@
     },
     "limits": {
         "tpc_fsse": {
-            "planning.warning.high": 123,
+            "odb.caution.high": 130,
+            "odb.warning.high": 128,
+            "planning.warning.high": 124,
             "unit": "degF"
         }
     },
