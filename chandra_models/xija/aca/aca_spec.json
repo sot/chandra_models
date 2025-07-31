@@ -191,7 +191,7 @@
   "evolve_method": 2,
   "limits": {
     "aacccdpt": {
-      "planning.warning.high": -2.7,
+      "planning.warning.high": -2.1,
       "unit": "degC"
     }
   },
