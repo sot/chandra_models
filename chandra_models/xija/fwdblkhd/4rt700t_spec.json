@@ -208,8 +208,8 @@
             "name": "step_power_7__oba0"
         }
     ],
-    "datestart": "2024:271:00:05:18.816",
-    "datestop": "2025:269:23:52:30.816",
+    "datestart": "2024:337:00:03:18.816",
+    "datestop": "2025:270:23:50:14.816",
     "dt": 328.0,
     "evolve_method": 2,
     "gui_config": {
@@ -575,22 +575,22 @@
         {
             "comp_name": "solarheat__oba0",
             "fmt": "{:.4g}",
-            "frozen": true,
+            "frozen": false,
             "full_name": "solarheat__oba0__ampl",
             "max": 200.0,
             "min": -200.0,
             "name": "ampl",
-            "val": 0.7019
+            "val": 0.783163612251964
         },
         {
             "comp_name": "solarheat__oba0",
             "fmt": "{:.4g}",
-            "frozen": true,
+            "frozen": false,
             "full_name": "solarheat__oba0__bias",
             "max": 200.0,
             "min": -200.0,
             "name": "bias",
-            "val": 7.008374414153372
+            "val": 7.073731219680798
         },
         {
             "comp_name": "coupling__4rt700t__oba0",
@@ -670,7 +670,7 @@
             "max": 200.0,
             "min": -200.0,
             "name": "P",
-            "val": -0.43261166695660197
+            "val": -0.5356347217789975
         }
     ],
     "rk4": 0,
