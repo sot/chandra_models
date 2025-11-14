@@ -143,9 +143,9 @@
     "evolve_method": 1,
     "limits": {
         "pftank2t": {
-            "odb.caution.high": 130,
+            "odb.caution.high": 135,
             "odb.warning.high": 140,
-            "planning.warning.high": 125,
+            "planning.warning.high": 130,
             "unit": "degF"
         }
     },
