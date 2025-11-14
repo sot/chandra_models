@@ -155,7 +155,7 @@
         "tpc_fsse": {
             "odb.caution.high": 128,
             "odb.warning.high": 130,
-            "planning.warning.high": 124,
+            "planning.warning.high": 122,
             "unit": "degF"
         }
     },
