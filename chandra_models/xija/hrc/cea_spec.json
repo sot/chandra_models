@@ -937,7 +937,7 @@
       "max": 100,
       "min": 10,
       "name": "bias",
-      "val": 18.648272881480064
+      "val": 10
     },
     {
       "comp_name": "2ps5aon_on",
