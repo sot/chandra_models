@@ -149,9 +149,8 @@
     "evolve_method": 2,
     "limits": {
         "arwa5bt": {
-            "odb.caution.high": 126,
-            "odb.warning.high": 131,
-            "planning.warning.high": 120,
+            "odb.caution.high": 140,
+            "odb.warning.high": 145,
             "unit": "degF"
         }
     },
