@@ -101,7 +101,7 @@
             ],
             "init_kwargs": {
                 "ampl": 0.003851,
-                "epoch": "2025:159",
+                "epoch": "2025:287",
                 "tau": 365,
                 "var_func": "linear"
             },
@@ -147,29 +147,15 @@
             "name": "solarheat_off_nom_roll__rw50"
         }
     ],
-    "datestart": "2024:344:00:03:50.816",
-    "datestop": "2025:342:23:51:02.816",
+    "datestart": "2025:105:00:00:14.816",
+    "datestop": "2026:104:23:52:54.816",
     "dt": 328.0,
     "evolve_method": 2,
-    "gui_config": {
-        "filename": "/home/christian.anderson/AXAFLIB/chandra_models_Christian/chandra_models/xija/rwa/tpcm_rw5_final_fit.json",
-        "plot_names": [
-            "tpcm_rw5 data__time",
-            "tpcm_rw5 resid__time"
-        ],
-        "set_data_vals": {
-            "rw50": 35
-        },
-        "size": [
-            1400,
-            755
-        ]
-    },
     "limits": {
         "tpcm_rw5": {
             "odb.caution.high": 128,
             "odb.warning.high": 131,
-            "planning.warning.high":125,
+            "planning.warning.high": 125,
             "unit": "degF"
         }
     },
@@ -184,7 +170,7 @@
             "max": 100.0,
             "min": -100.0,
             "name": "T",
-            "val": -6.240312023439688
+            "val": -7.570582252652198
         },
         {
             "comp_name": "heatsink__rw50",
@@ -194,7 +180,7 @@
             "max": 100.0,
             "min": -100.0,
             "name": "tau",
-            "val": 52.26175786419108
+            "val": 56.44055447383626
         },
         {
             "comp_name": "prop_heat__rw50",
@@ -204,7 +190,7 @@
             "max": 1.0,
             "min": 0.0,
             "name": "k",
-            "val": 0.66256338619769
+            "val": 0.0021205736265094022
         },
         {
             "comp_name": "prop_heat__rw50",
@@ -214,7 +200,7 @@
             "max": 100.0,
             "min": -50.0,
             "name": "T_set",
-            "val": 23.088270681665417
+            "val": 36.51568272110859
         },
         {
             "comp_name": "solarheat__rw50",
@@ -224,7 +210,7 @@
             "max": 100.0,
             "min": -100.0,
             "name": "P_45",
-            "val": 0.7973272795810796
+            "val": 0.7649928135822941
         },
         {
             "comp_name": "solarheat__rw50",
@@ -234,7 +220,7 @@
             "max": 100.0,
             "min": -100.0,
             "name": "P_45",
-            "val": 0.7974841805395478
+            "val": 0.7632285761614448
         },
         {
             "comp_name": "solarheat__rw50",
@@ -244,7 +230,7 @@
             "max": 100.0,
             "min": -100.0,
             "name": "P_60",
-            "val": 0.8116283913247945
+            "val": 0.7966288207181469
         },
         {
             "comp_name": "solarheat__rw50",
@@ -254,7 +240,7 @@
             "max": 100.0,
             "min": -100.0,
             "name": "P_75",
-            "val": 0.8671541155079681
+            "val": 0.8291541300048947
         },
         {
             "comp_name": "solarheat__rw50",
@@ -264,7 +250,7 @@
             "max": 100.0,
             "min": -100.0,
             "name": "P_75",
-            "val": 0.8917529450097215
+            "val": 0.8580664150445168
         },
         {
             "comp_name": "solarheat__rw50",
@@ -274,7 +260,7 @@
             "max": 100.0,
             "min": -100.0,
             "name": "P_90",
-            "val": 0.9269207013437746
+            "val": 0.8887652498953542
         },
         {
             "comp_name": "solarheat__rw50",
@@ -284,7 +270,7 @@
             "max": 100.0,
             "min": -100.0,
             "name": "P_110",
-            "val": 0.9263152646040728
+            "val": 0.8896931366323012
         },
         {
             "comp_name": "solarheat__rw50",
@@ -294,7 +280,7 @@
             "max": 100.0,
             "min": -100.0,
             "name": "P_110",
-            "val": 0.9183210571394563
+            "val": 0.8588612464792955
         },
         {
             "comp_name": "solarheat__rw50",
@@ -304,7 +290,7 @@
             "max": 100.0,
             "min": -100.0,
             "name": "P_120",
-            "val": 0.8574517349377021
+            "val": 0.8214176862043628
         },
         {
             "comp_name": "solarheat__rw50",
@@ -314,7 +300,7 @@
             "max": 100.0,
             "min": -100.0,
             "name": "P_130",
-            "val": 0.7826348515214516
+            "val": 0.7309944586665533
         },
         {
             "comp_name": "solarheat__rw50",
@@ -324,7 +310,7 @@
             "max": 100.0,
             "min": -100.0,
             "name": "P_150",
-            "val": 0.7395171475150468
+            "val": 0.6433990405970664
         },
         {
             "comp_name": "solarheat__rw50",
@@ -334,7 +320,7 @@
             "max": 100.0,
             "min": -100.0,
             "name": "P_160",
-            "val": 0.5362378925030273
+            "val": 0.4620083335787002
         },
         {
             "comp_name": "solarheat__rw50",
@@ -344,7 +330,7 @@
             "max": 100.0,
             "min": -100.0,
             "name": "P_160",
-            "val": 0.38143995654722973
+            "val": 0.31378092002857033
         },
         {
             "comp_name": "solarheat__rw50",
@@ -354,7 +340,7 @@
             "max": 100.0,
             "min": -100.0,
             "name": "P_170",
-            "val": 0.2343354318966927
+            "val": 0.18867777601722258
         },
         {
             "comp_name": "solarheat__rw50",
@@ -364,7 +350,7 @@
             "max": 100.0,
             "min": -100.0,
             "name": "P_180",
-            "val": 0.07398818284229378
+            "val": 0.017801025840736985
         },
         {
             "comp_name": "solarheat__rw50",
@@ -534,7 +520,7 @@
             "max": 100.0,
             "min": -100.0,
             "name": "ampl",
-            "val": 0.030500679697409723
+            "val": 0.032813638075083994
         },
         {
             "comp_name": "solarheat__rw50",
@@ -544,7 +530,7 @@
             "max": 100.0,
             "min": -100.0,
             "name": "bias",
-            "val": 0.21170895202788353
+            "val": 0.23150688935454755
         },
         {
             "comp_name": "coupling__tpcm_rw5__rw50",
@@ -554,7 +540,7 @@
             "max": 300.0,
             "min": 2.0,
             "name": "tau",
-            "val": 11.66866703919937
+            "val": 11.723714001974747
         },
         {
             "comp_name": "solarheat_off_nom_roll__rw50",
@@ -564,7 +550,7 @@
             "max": 100.0,
             "min": -100.0,
             "name": "P_plus_y",
-            "val": 0.940150971780654
+            "val": 0.8267227804223342
         },
         {
             "comp_name": "solarheat_off_nom_roll__rw50",
@@ -574,7 +560,7 @@
             "max": 100.0,
             "min": -100.0,
             "name": "P_minus_y",
-            "val": 0.5167711226899159
+            "val": 0.5017421402893564
         }
     ],
     "rk4": 0,
